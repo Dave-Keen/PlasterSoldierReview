@@ -1,0 +1,18 @@
+// Breadcrumb
+
+.breadcrumb {
+	height: auto;
+	font-size: inherit;
+	line-height: 2rem;
+	color: rgba(000,000,000, .7);
+	line-height: 2rem;
+	background: none;
+
+	&:before {
+		color: rgba(000,000,000, .7);
+	}
+
+	&:last-child {
+    	color: #000;
+  	}
+}

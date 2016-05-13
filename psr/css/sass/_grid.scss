@@ -1,0 +1,19 @@
+// Box content on medium viewports
+@media #{$medium-only} {
+
+	.boxed-content {
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
+}
+
+// Box content on large viewports
+@media #{$large-and-up} {
+
+	.boxed-content {
+		width: 700px;
+		margin: 0 auto;
+	}
+
+}

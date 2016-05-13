@@ -1,0 +1,116 @@
+// Mobile logo
+.mobile-logo {
+	width: 90px;
+	height: 50px;
+	background: url(../images/branding/logomark-small@2x.png) no-repeat;
+	background-size: contain;
+	margin-top: 14px;
+}
+
+// Mobile navbar links
+.nav-mobile {
+	height: 80px;
+	overflow: hidden;
+}
+
+.nav-mobile li a, .button-collapse {
+	font-size: 0.7rem;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 80px;
+	padding: 16px 0 0 16px;
+}
+
+.nav-mobile i.material-icons, nav .button-collapse i{
+	height: auto;
+	line-height: 0;
+	position: relative;
+	top: 16px;
+}
+
+@media #{$large-and-up} {
+	.nav-mobile {
+		height:0;
+	}
+}
+
+// Sidenav
+.side-nav {
+	.nav-logo {
+		width: 200px;
+		height: 90px;
+		background: url(../images/branding/logotype-centered-strapline@2x.png) no-repeat;
+		background-size: contain;
+		margin-top: 20px;
+	}
+
+	a { // Update Materialise
+		height: 48px;
+		line-height: 50px;
+	}
+}
+
+.side-nav.fixed a { // Update Materialise
+	padding: 0 15px 0 0;
+}
+
+// Retain height for medium screen
+@media #{$medium-and-up} {
+  nav {
+    height: 80px;
+    	a.button-collapse {
+    		height: 80px;
+    		line-height: 80px;
+    	}
+
+    	a.button-collapse i {
+    		height: auto;
+    		line-height: 0;
+    	}
+  }
+
+}
+
+// Hide mobile navbar on larger screens
+@media only screen and (min-width: $medium-screen) {
+	nav {
+		height: 0;
+		background: none;
+		box-shadow: none;
+	}
+}
+
+// Search
+.modal.bottom-sheet.search {
+  top: 90px;
+  margin: 0 auto;
+  width: 90%;
+  max-height: 70%;
+
+  .modal-content {
+  	padding: 10px;
+
+  	.row .col {
+  		padding: 0;
+  	}
+
+  	& .search-field {
+  		margin-top: 0;
+  	}
+
+  	.input-field input[type=search] {
+		width: 100%;
+  		padding-left: 0;
+  	}
+
+  }
+
+}
+
+
+
+
+
+
+
+

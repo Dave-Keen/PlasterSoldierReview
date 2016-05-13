@@ -1,0 +1,30 @@
+// image figures
+.article-page {
+
+	figure {
+		margin: 0 0 1em 0;
+	}
+}
+
+
+// image modal
+.article-page {
+
+	.modal.image {
+		width: 90%;
+
+		.modal-content {
+			padding: 0;
+			line-height: 0;
+		}
+	}
+}
+
+// ratings
+.ratings {
+
+	.progress {
+		width: 50%;
+	}
+
+}

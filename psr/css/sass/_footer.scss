@@ -1,0 +1,23 @@
+//Footer logo
+.footer-logo {
+	width:245px;
+	height:93px;
+	background:url(../images/branding/logotype-centered-strapline@2x.png) no-repeat;
+	background-size:contain;
+	margin:40px auto;
+	display:block;
+}
+
+//Copyright
+footer.page-footer {
+	hr {
+		width:50%;
+	}
+
+	.footer-copyright { // Update Materialise
+		height:auto;
+		background:none;
+		line-height:1.5;
+	}
+}
+

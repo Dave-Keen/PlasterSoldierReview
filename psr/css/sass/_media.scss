@@ -1,0 +1,27 @@
+// Media on article
+@media #{$large-and-up} {
+
+	.article-media {
+
+		width: 700px;
+		margin: 0 auto;
+
+		.slider {
+			height: auto;
+
+			.slides {
+				height: auto;
+				background: none;
+
+				li {
+					position: relative;
+					overflow: visible;
+					opacity: 100;
+				}
+			}
+
+		}
+
+	}
+
+}
