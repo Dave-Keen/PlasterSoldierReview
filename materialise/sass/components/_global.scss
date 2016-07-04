@@ -48,6 +48,15 @@ ul {
   }
 }
 
+ul.bulleted-list {
+  padding: 0 0 0 40px;
+
+  li {
+    list-style-type: disc;
+  }
+
+}
+
 // classic clearfix
 .clearfix {
   clear: both;

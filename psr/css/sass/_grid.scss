@@ -1,4 +1,14 @@
 // Box content on medium viewports
+
+@media #{$medium-and-down} {
+
+	.boxed-content-med-and-down {
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
+}
+
 @media #{$medium-only} {
 
 	.boxed-content {
