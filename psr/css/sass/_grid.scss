@@ -1,3 +1,14 @@
+// padding
+
+.alpha {
+	padding-left: 0;
+}
+
+.omega {
+	padding-right: 0;
+}
+
+
 // Box content on medium viewports
 
 @media #{$medium-and-down} {

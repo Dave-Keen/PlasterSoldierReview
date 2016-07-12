@@ -1,5 +1,5 @@
 /*** Colors ***/
-$primary-color: color("materialize-red", "lighten-2") !default;
+$primary-color: color("psr-green", "base") !default;
 $primary-color-light: lighten($primary-color, 15%) !default;
 $primary-color-dark: darken($primary-color, 15%) !default;
 
@@ -7,27 +7,40 @@ $secondary-color: color("teal", "lighten-1") !default;
 $success-color: color("green", "base") !default;
 $error-color: color("red", "base") !default;
 $link-color: color("light-blue", "darken-1") !default;
+$panel-color: color("shades", "white") !default;
+$body-color: #F9F9F9 !default;
 
 /*** Badges ***/
 $badge-bg-color: $secondary-color !default;
+$meta-badge-bg-color: #732024 !default;
+$meta-badge-text-color: #FFF3DA !default;
+$meta-badge-text-transform: uppercase !default;
+
+/** Borders **/
+$border-color: #EFEFEF !default;
 
 /*** Buttons ***/
 $button-bg-color-disabled: #DFDFDF !default;
-$button-color: $secondary-color !default;
+$button-color: $primary-color !default;
 $button-color-disabled: #9F9F9F !default;
 $button-color-flat: #343434 !default;
-$button-color-raised: #fff !default;
+$button-color-raised: #FFF3DA !default;
 $button-floating-size: 37px !default;
-$button-height: 36px !default;
+$button-height: 48px !default;
 $button-font-size-shared: 1.3rem !default;
 $button-large-icon-font-size: 1.6rem !default;
-$button-line-height: 36px !default;
+$button-line-height: 48px !default;
+$button-font-weight: 400 !default;
 
 /*** Cards ***/
 $card-padding: 20px !default;
 $card-bg-color: #fff !default;
 $card-link-color: color("orange", "accent-2") !default;
 $card-link-color-light: lighten($card-link-color, 20%) !default;
+
+/** Panels **/
+$panel-padding: 20px !default;
+$panel-padding-top-bottom: 20px 0 !default;
 
 /*** Collapsible ***/
 $collapsible-height: 3rem !default;
@@ -76,7 +89,6 @@ $switch-checked-lever-bg: desaturate(lighten($secondary-color, 25%), 25%) !defau
 $switch-unchecked-bg: #F1F1F1 !default;
 $switch-unchecked-lever-bg: #818181 !default;
 
-
 /*** Global ***/
 // Media Query Ranges
 $small-screen-up: 601px !default;
@@ -99,15 +111,19 @@ $element-top-margin: $gutter-width/3 !default;
 $element-bottom-margin: ($gutter-width*2)/3 !default;
 
 /*** Navbar ***/
+$nav-bg-color: #2C2C2C !default;
 $navbar-height: 64px !default;
 $navbar-height-mobile: 80px !default;
-$navbar-font-color: #fff !default;
+$navbar-font-color: #EFEFEF !default;
 $navbar-brand-font-size: 2.1rem !default;
 
 /*** SideNav ***/
-$sidenav-bg-color: #fff !default;
+$sidenav-bg-color: #2C2C2C !default;
 $sidenav-padding-right: 15px !default;
 $sidenav-item-height: 64px !default;
+
+/*** Footer ***/
+$footer-font-color: #EFEFEF !default;
 
 /*** Photo Slider ***/
 $slider-bg-color: color('grey', 'base') !default;
@@ -132,7 +148,13 @@ $toast-color: #323232 !default;
 $toast-text-color: #fff !default;
 
 /*** Typography ***/
-$off-black: rgba(0, 0, 0, 0.87) !default;
+$off-black: #4A4A4A !default;
+$weight-medium: 400 !default;
+
+// Paragraph Styles
+$p-x-small: 0.76rem !default;
+$p-small: 0.875rem !default;
+
 // Header Styles
 $h1-fontsize: 2rem !default;
 $h2-fontsize: 1.625rem !default;
@@ -150,7 +172,7 @@ $intervals: 20 !default;
 $interval-size: $range / $intervals !default;
 
 /*** Collections ***/
-$collection-border-color: #e0e0e0 !default;
+$collection-border-color: #EFEFEF !default;
 $collection-bg-color: #fff !default;
 $collection-active-bg-color: $secondary-color !default;
 $collection-active-color: lighten($secondary-color, 55%) !default;
@@ -159,3 +181,10 @@ $collection-link-color: $secondary-color !default;
 
 /* Progress Bar */
 $progress-bar-color: $secondary-color !default;
+
+/* Sprite Sheet */
+$sprite-sheet-img: "../images/gui/sprite-sheet@2x.png" !default;
+$sprite-width: 300px !default;
+$sprite-height: 300px !default;
+
+

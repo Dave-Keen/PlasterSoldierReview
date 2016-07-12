@@ -6,6 +6,9 @@
 
 // Google Color Palette defined: http://www.google.com/design/spec/style/color.html
 
+$psr-green: (
+  "base":       #6F745D
+  );
 
 $materialize-red: (
   "lighten-5":  #fdeaeb,
@@ -338,6 +341,7 @@ $shades: (
 );
 
 $colors: (
+  "psr-green": $psr-green,
   "materialize-red": $materialize-red,
   "red": $red,
   "pink": $pink,

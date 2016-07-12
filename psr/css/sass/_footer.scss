@@ -1,23 +1,68 @@
+footer.page-footer {
+
+	a {
+		color: $footer-font-color;
+	}
+
+	h4 {
+		color: $footer-font-color;
+		text-transform: uppercase;
+	}
+
+	small {
+		color: $footer-font-color;
+	}
+
+	.footer-links {
+		border-bottom: 1px solid #5c5d5a;
+
+		.social-links li {
+			padding-bottom: 10px;
+
+			a {
+				height: 30px;
+				width: 100%;
+				@include sprite-sheet(0 0);
+				display: block;
+				text-decoration: none;
+				line-height: 2.0;
+				padding-left: 40px;
+			}
+
+			.twitter {
+				@include sprite-sheet(0 -30px);
+			}
+		}
+
+		.site-links {
+
+			li {
+				padding: 0 0 8px 0;
+			}
+		}
+	}
+}
+
 //Footer logo
 .footer-logo {
 	width:245px;
 	height:93px;
-	background:url(../images/branding/logotype-centered-strapline@2x.png) no-repeat;
+	background:url(../images/branding/logotype-centered-strapline-footer@2x.png) no-repeat;
 	background-size:contain;
-	margin:40px auto;
+	margin:20px auto;
 	display:block;
 }
 
-//Copyright
-footer.page-footer {
-	hr {
-		width:50%;
+@media #{$large-and-up} {
+
+	footer.page-footer .container {
+		width: 100%;
+		padding-left: 240px;
 	}
 
-	.footer-copyright { // Update Materialise
-		height:auto;
-		background:none;
-		line-height:1.5;
+	.footer-content {
+		width: 700px !important;
+		margin:0 auto;
 	}
 }
 

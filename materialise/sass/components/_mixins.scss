@@ -3,3 +3,10 @@
 //     -moz-box-shadow: $args1, $args2;
 //     box-shadow: $args1, $args2;
 // }
+
+
+// Sprites
+@mixin sprite-sheet($position, $repeat: no-repeat) {
+	background: url($sprite-sheet-img) $repeat $position;
+	background-size: $sprite-width $sprite-height;
+}

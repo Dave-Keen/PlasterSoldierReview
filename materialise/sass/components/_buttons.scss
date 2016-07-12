@@ -40,12 +40,15 @@
 .btn {
   text-decoration:none;
   color: $button-color-raised;
+  font-weight: $button-font-weight;
   background-color: $button-color;
   text-align: center;
   letter-spacing: .5px;
   @extend .z-depth-1;
   transition: .2s ease-out;
   cursor: pointer;
+  border-bottom: 4px solid $primary-color-dark;
+
 
   &:hover {
     background-color: lighten($button-color, 5%);

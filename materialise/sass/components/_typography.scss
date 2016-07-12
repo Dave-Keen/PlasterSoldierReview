@@ -3,8 +3,12 @@ a {
   text-decoration: none;
 }
 
+a.link {
+  text-decoration: underline;
+}
+
 html{
-  line-height: 1.7;
+  line-height: 1.5;
   font-size: 16px;
 
   @media only screen and (min-width: 0) {
@@ -38,6 +42,10 @@ h3 { font-size: $h3-fontsize; line-height: 120%; margin: ($h3-fontsize / 2) 0 ($
 h4 { font-size: $h4-fontsize; line-height: 120%; margin: ($h4-fontsize / 2) 0 ($h4-fontsize / 2.5) 0;}
 h5 { font-size: $h5-fontsize; line-height: 120%; margin: ($h5-fontsize / 2) 0 ($h5-fontsize / 2.5) 0;}
 h6 { font-size: $h6-fontsize; line-height: 120%; margin: ($h6-fontsize / 2) 0 ($h6-fontsize / 2.5) 0;}
+
+a h4 {
+    color: $off-black;
+}
 
 // Text Styles
 em { font-style: italic; }
