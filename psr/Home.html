@@ -23,7 +23,7 @@
         <a id="logo-container" class="left hide-on-large-only mobile-logo" href="/home"></a>
 
         <ul id="nav-mobile" class="right hide-on-large-and-up nav-mobile">
-          <li><a class="modal-trigger" href="#modal1"><i class="material-icons">search</i>Search</a></li>
+          <li><a class="modal-trigger" href="#modalSearch"><i class="material-icons">search</i>Search</a></li>
           <li class="hide-on-small-only"><a href="/compare"><i class="material-icons">compare</i>Compare</a></li>
         </ul>
         
@@ -31,16 +31,16 @@
           <li class="logo">
             <a id="logo-container" href="#" class="nav-logo"></a>
           </li>
-          <li><a class="modal-trigger hide-on-med-and-down" href="#modal1">Search</a></li>
-          <li><a class="modal-trigger hide-on-med-and-down" href="/compare">Compare <span>3 / 4 added</span></a></li>
-          <li><a href="/home">Home</a></li>
-          <li><a href="/periods">Periods</a></li>
-          <li><a href="/manuafacturers">Manufacturers</a></li>
-          <li><a href="/features">Features</a></li>
-          <li><a href="/future-releases">Future Release</a></li>
-          <li><a href="/awaiting-reviews">Awaiting Reviews</a></li>
-          <li><a href="/news">News</a></li>
-          <li><a href="#/links">Links</a></li>
+          <li><a class="modal-trigger hide-on-med-and-down" href="#modalSearch">Search <i class="material-icons search-icon">search</i></a></li>
+          <li class="compare"><a class="hide-on-med-and-down" href="/compare">Compare <span>3 / 4 added</span> <i class="material-icons">chevron_right</i></a></li>
+          <li><a href="/home">Home <i class="material-icons">chevron_right</i></a></li>
+          <li><a href="/periods">Periods <i class="material-icons">chevron_right</i></a></li>
+          <li><a href="/manuafacturers">Manufacturers <i class="material-icons">chevron_right</i></a></li>
+          <li><a href="/features">Features <i class="material-icons">chevron_right</i></a></li>
+          <li><a href="/future-releases">Future Release <i class="material-icons">chevron_right</i></a></li>
+          <li><a href="/awaiting-reviews">Awaiting Reviews <i class="material-icons">chevron_right</i></a></li>
+          <li><a href="/news">News <i class="material-icons">chevron_right</i></a></li>
+          <li><a href="#/links">Links <i class="material-icons">chevron_right</i></a></li>
         </ul>
 
         <a href="#" data-activates="slide-out" class="button-collapse right"><i class="mdi-navigation-menu"></i>
@@ -52,29 +52,34 @@
 
   </header>
 
-  <main class="homepage hero-mode">
+  <main class="homepage hero-mode"><!-- hero-mode class needed for hero styles -->
 
-    <section class="row intro boxed-content"><!-- intro -->
-      <div class="col s12">
-        <h1>Latest Plastic Soldier News, Reviews &amp; Features</h1>
+    <section class="row boxed-content intro"><!-- intro -->
+      <div class="col s12 header">
+        <div class="inner">
+          <h1>Latest Plastic Soldier News, <span>Reviews &amp; Features</span></h1>
+        </div>
       </div>
-      <div class="col s12 last-updated">
-        <p>Last updated on 12/12/12</p>
+      <div class="col s12 right last-updated">
+        <div class="inner">
+          <p>Last updated on 12/12/12</p>
+        </div>
       </div>
+      <div class="small-medium-background" style="background:url(images/demo/hero-demo.jpg)"></div><!-- needed for mobile and tablet hero styles -->
     </section><!--/ intro -->
 
     <div class="panel">
 
-      <section class="article-listing boxed-content-med-and-down"><!-- hero -->
+      <section class="article-listing boxed-content first"><!-- hero -->
 
-        <div class="row hero">
+        <div class="row hero"><!-- needed for hero styles -->
           <div class="col thumbnail">
             <a href="#">
               <div class="article-type-badge">Review</div>
               <img src="images/demo/article-listing-demo-1@2x.jpg" alt="" class="responsive-img">
             </a>
           </div>
-          <div class="col s7 m8 l12">
+          <div class="col s7 m8 description">
             <p class="title">
               <a href="#">Russian War Monks and Russian War Monks Artillery</a>
             </p>
@@ -84,10 +89,13 @@
             </p>
             <p class="excerpt hide-on-small-only">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
-          <div class="col l12">
+          <div class="col l12 hide cta">
             <a href="#!" class="btn ghost">Read Review</a>
           </div>
-          <div class="background" style="background:url(http://placehold.it/800x400)"></div>
+          <div class="col l12 hide cta">
+            <a href="#!" class="btn-flat view-more">View More Articles <i class="material-icons">keyboard_arrow_down</i></a>
+          </div>
+          <div class="background" style="background:url(images/demo/hero-demo.jpg)"></div>
         </div>
 
       </section><!--/ hero -->
@@ -323,8 +331,8 @@
     </div>
   </footer>
 
-  <div id="modal1" class="modal bottom-sheet search"><!-- search modal -->
-      <div class="modal-content search">
+  <div id="modalSearch" class="modal modal-fixed-footer search"><!-- search modal -->
+      <div class="modal-content">
 
         <form>
 
@@ -333,9 +341,6 @@
               <input placeholder="Keyword" id="search" type="search" required>
               <label for="search"></label>
               <i class="material-icons">close</i>
-            </div>
-            <div class="col s3 right right-align">
-              <a href="#!" class="modal-action modal-close">Cancel</a>
             </div>
           </div>
 
@@ -408,6 +413,10 @@
 
         </form>
       
+      </div>
+
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect btn-flat ">Close</a>
       </div>
     </div><!--/ search modal -->
 

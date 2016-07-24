@@ -42,23 +42,46 @@
 }
 
 // Sidenav
-.side-nav {
-	.nav-logo {
-		width: 200px;
-		height: 90px;
-		background: url(../images/branding/logotype-centered-strapline@2x.png) no-repeat;
-		background-size: contain;
-		margin-top: 20px;
-	}
+nav .nav-wrapper .side-nav {
 
 	a { // Update Materialise
 		height: 48px;
 		line-height: 50px;
+		border-bottom: 1px solid $navbar-border;
+	}
+
+	.nav-logo {
+		width: 200px;
+		height: 90px;
+		margin-top: 40px;
+		background: url(../images/branding/logotype-centered-strapline@2x.png) no-repeat;
+		background-size: contain;
+		border: none;
+	}
+
+	i {
+		height: auto;
+		line-height: inherit;
+		margin-left: 90%;
+		margin-top: -50px;
+	}
+
+	.search-icon {
+		font-size: 1.5rem;
+	}
+
+	.compare {
+		span {
+			font-size: $p-x-small;
+			color: $navbar-light-grey;
+			margin-left: 20px;
+		}
 	}
 }
 
+
 .side-nav.fixed a { // Update Materialise
-	padding: 0 15px 0 0;
+	
 }
 
 // Retain height for medium screen

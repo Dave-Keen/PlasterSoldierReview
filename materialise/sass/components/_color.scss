@@ -7,7 +7,34 @@
 // Google Color Palette defined: http://www.google.com/design/spec/style/color.html
 
 $psr-green: (
-  "base":       #6F745D
+  "lighten-5":  #b7b9ae,
+  "lighten-4":  #a8ab9d,
+  "lighten-3":  #9a9d8d,
+  "lighten-2":  #8b8f7d,
+  "lighten-1":  #7d816d,
+  "base":       #6F745D,
+  "darken-1":   #636853,
+  "darken-2":   #585c4a,
+  "darken-3":   #4d5141,
+  "darken-4":   #424537
+  );
+
+$psr-beige: (
+  "lighten-5":  #ebe4d5,
+  "lighten-4":  #e7dfcc,
+  "lighten-3":  #e3d9c4,
+  "lighten-2":  #dfd4bb,
+  "lighten-1":  #dbcfb3,
+  "base":       #D8CAAB,
+  "darken-1":   #c2b599,
+  "darken-2":   #aca188,
+  "darken-3":   #978d77,
+  "darken-4":   #817966
+  );
+
+
+$psr-gold: (
+  "base":  #F7D893
   );
 
 $materialize-red: (
@@ -20,7 +47,7 @@ $materialize-red: (
   "darken-1":   #d0181e,
   "darken-2":   #b9151b,
   "darken-3":   #a21318,
-  "darken-4":   #8b1014,
+  "darken-4":   #8b1014
 );
 
 $red: (
@@ -340,8 +367,11 @@ $shades: (
   "transparent":  transparent
 );
 
+
 $colors: (
   "psr-green": $psr-green,
+  "psr-beige": $psr-beige,
+  "psr-gold": $psr-gold,
   "materialize-red": $materialize-red,
   "red": $red,
   "pink": $pink,

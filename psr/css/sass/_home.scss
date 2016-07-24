@@ -13,11 +13,98 @@
 			display: none;
 		}
 	}
+}
 
-	@media #{$large-and-up} {
+@media #{$small-and-down} {
+	
+	.homepage {
 
-		// Hero mode
-		.hero-mode {
+		&.hero-mode {
+
+			.intro {
+				position: relative;
+				margin-bottom: 0;
+
+				.small-medium-background {
+					min-height: 180px;
+					background-size: cover !important;
+				}
+
+				.header {
+
+					h1 {
+						color: $white;
+					}
+				}
+
+				.last-updated p {
+					font-weight: $weight-medium;
+					color: $secondary-color;
+					position: absolute;
+					bottom: 10px;
+				}
+			}
+		}
+	}
+}
+
+@media #{$medium-and-up} { // Need to make header and last updated text central in 700px container
+
+	.homepage {
+
+		&.hero-mode {
+
+			.intro {
+				max-width: 100%;
+				position: relative;
+				margin-bottom: 0;
+
+				.small-medium-background {
+					min-height: 220px;
+					background-size: cover !important;
+				}
+
+				.inner {
+					max-width: 700px;
+    				margin: 0 auto;
+				}
+
+				.header {
+
+					h1 {
+						color: $white;
+						padding: 0 0.75rem;
+
+						span {
+							display: block;
+						}
+					}
+				}
+
+				.last-updated p {
+					font-weight: $weight-medium;
+					color: $secondary-color;
+					position: absolute;
+					padding: 0 0.75rem;
+					bottom: 10px;
+				}
+			}
+		}
+
+		.meta {
+			span {
+				display: inline;
+				margin:0 5px 0 0;
+			}
+		}
+	}
+}
+
+@media #{$large-and-up} {
+
+	.homepage {
+
+		&.hero-mode {
 
 			.intro, .last-updated {
 				position: relative;
@@ -25,55 +112,172 @@
 			}
 
 			.intro {
-				margin-top: 40px;
+				margin-bottom: 0;
+				width: 90%;
+				margin: 0 auto;	
+				padding-top: 40px;
+
+				.small-medium-background {
+					display: none;
+				}
+
+				.header {
+					width: 25%;
+
+					h1 {
+						font-size: $h1-x-small;
+						font-weight: $weight-medium;
+						color: $secondary-color;
+						margin: 0;
+						padding: 0;
+
+						span {
+							display: inline-block;
+						}
+					}
+
+					h1:after {
+					    content: "";
+					    position: absolute;
+					    left: 12px;
+					    top: 75px;
+					    height: 1px;
+					    width: 40px;
+					    border-bottom: 2px solid $secondary-color;
+					}
+				}
+
+				.last-updated {
+					width: 33.33333%;
+					padding: 0;
+
+					.inner {
+						margin-left: 50%;
+					}
+
+						p {
+						font-size: $p-x-small;
+						font-weight: $weight-medium;
+						color: $secondary-color;
+						text-align: right;
+						margin-top: 0.1rem;
+						bottom: 0;
+						top: 0;
+					}
+				}
+
 			}
 
-			.intro h1 {
-				font-size: 1.2rem;
-				margin: 0;
+			.hero {
+
+				margin-top: -89px;
+				padding-bottom: 0;
+
+				.background {
+					display: block;
+					min-height:560px;
+					z-index: 1;
+					background-repeat: no-repeat !important;
+					background-size: cover !important;
+				}
+
+				.thumbnail {
+				    width: 100%;
+				    height: 20px;
+				    text-align: center;
+				    margin-left: -18px;
+
+					img {
+						display: none;
+					}
+
+					.article-type-badge {
+					    top: 0;
+					    position: relative;
+					    padding: 4px;
+					    width: 80px;
+					    margin: 100px auto 0 auto;
+					}
+				}
+
+				.description {
+					width: 100%;
+				}
+
+				p {
+					max-width: 620px;
+					color: $white;
+					margin-left: auto;
+					margin-right: auto;
+				}
+
+				p, .btn.ghost {
+					position: relative;
+					z-index: 10;
+					text-align: center;
+				}
+
+				.title {
+					font-size: $h1-large;
+					line-height: 1.1;
+					padding-top: 120px;
+					margin: 0 auto;
+
+					a {
+						color: $white;
+					}
+				}
+
+				.meta {
+					span {
+						font-weight: $weight-medium;
+						margin:0 5px;
+					}
+				}
+
+				.excerpt {
+					padding-top: 20px;
+				}
+
+				.cta {
+					display: block !important;
+				}
+
+				.btn.ghost {
+					display: block;
+					width: 180px;
+					margin: 0 auto;
+					background: rgba(255,255,255,0.10);
+				    border: 3px solid $ghost-color;
+				    color: $ghost-color;
+				    line-height: 2.8;
+				}
+
+				.view-more {
+					display: block;
+					width: 240px;
+					margin: 0 auto;
+					font-weight: $weight-medium;
+					color: $white;
+					text-align: center;
+					line-height: 1;
+					padding-top: 80px;
+
+					i {
+						display: block;
+						font-size: 3rem;
+					}
+				}
 			}
 
-			.last-updated p {
-				margin-top: 0.1rem;
-			}
+		.article-listing.boxed-content.first {
+			width: 100%;
+		}
+
 
 		}
 
-		// Hero
-		.hero {
-
-			margin-top: -153px;
-
-			.background {
-				display: block;
-				min-height:400px;
-				position: relative;
-				z-index: 1;
-			}
-
-			.thumbnail {
-				display: none;
-			}
-
-			p, .btn.ghost {
-				position: relative;
-				z-index: 10;
-				text-align: center;
-			}
-
-			p {
-				max-width: 700px;
-				margin-left: auto;
-				margin-right: auto;
-			}
-
-			.btn.ghost {
-				display: block;
-				width: 160px;
-				margin: 0 auto;
-			}
-
-		}
 
 	}
 }
+
