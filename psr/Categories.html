@@ -23,22 +23,24 @@
         <a id="logo-container" class="left hide-on-large-only mobile-logo" href="/home"></a>
 
         <ul id="nav-mobile" class="right hide-on-large-and-up nav-mobile">
-          <li><a class="modal-trigger" href="#modal1"><i class="material-icons">search</i>Search</a></li>
-          <li class="hide-on-small-only"><a href="#!"><i class="material-icons">invert_colors</i>Compare</a></li>
+          <li><a class="modal-trigger" href="#modalSearch"><i class="material-icons">search</i>Search</a></li>
+          <li class="hide-on-small-only"><a href="/compare"><i class="material-icons">compare</i>Compare</a></li>
         </ul>
         
         <ul id="slide-out" class="side-nav fixed">
           <li class="logo">
             <a id="logo-container" href="#" class="nav-logo"></a>
           </li>
-          <li><a href="/home">Home</a></li>
-          <li><a href="/periods">Periods</a></li>
-          <li><a href="/manuafacturers">Manufacturers</a></li>
-          <li><a href="/features">Features</a></li>
-          <li><a href="/future-releases">Future Release</a></li>
-          <li><a href="/awaiting-reviews">Awaiting Reviews</a></li>
-          <li><a href="/news">News</a></li>
-          <li><a href="#/links">Links</a></li>
+          <li><a class="modal-trigger hide-on-med-and-down" href="#modalSearch">Search <i class="material-icons search-icon">search</i></a></li>
+          <li class="compare"><a class="hide-on-med-and-down" href="/compare">Compare <span>3 / 4 added</span> <i class="material-icons">chevron_right</i></a></li>
+          <li><a href="/home">Home <i class="material-icons">chevron_right</i></a></li>
+          <li><a href="/periods">Periods <i class="material-icons">chevron_right</i></a></li>
+          <li><a href="/manuafacturers">Manufacturers <i class="material-icons">chevron_right</i></a></li>
+          <li><a href="/features">Features <i class="material-icons">chevron_right</i></a></li>
+          <li><a href="/future-releases">Future Release <i class="material-icons">chevron_right</i></a></li>
+          <li><a href="/awaiting-reviews">Awaiting Reviews <i class="material-icons">chevron_right</i></a></li>
+          <li><a href="/news">News <i class="material-icons">chevron_right</i></a></li>
+          <li><a href="#/links">Links <i class="material-icons">chevron_right</i></a></li>
         </ul>
 
         <a href="#" data-activates="slide-out" class="button-collapse right"><i class="mdi-navigation-menu"></i>
@@ -50,10 +52,10 @@
 
   </header>
 
-  <main>
+  <main class="category-page">
 
   <nav class="breadcrumb">
-    <div class="row nav-wrapper">
+    <div class="row boxed-content">
       <div class="col s12">
         <a href="#!" class="breadcrumb">Home</a>
         <a href="#!" class="breadcrumb">Periods</a>
@@ -69,7 +71,7 @@
 
     <section class="row boxed-content"><!-- featured periods -->
 
-      <h2 class="col s12">Featured Periods</h2>
+      <h2 class="col s12 h4-style">Featured Periods</h2>
 
       <ul class="row">
         
@@ -77,8 +79,8 @@
             <a href="#">
               <div class="card center hoverable">
                 <div class="card-image">
-                  <img src="http://placehold.it/160x120">
-                  <h4>Ancient</h4>
+                  <img src="images/demo/cat-demo-1@2x.jpg">
+                  <h3 class="h4-style">Ancient</h3>
                 </div>
               </div>
             </a>
@@ -88,8 +90,8 @@
             <a href="#">
               <div class="card center hoverable">
                 <div class="card-image">
-                  <img src="http://placehold.it/160x120">
-                  <h4>Republican Rome</h4>
+                  <img src="images/demo/cat-demo-2@2x.jpg">
+                  <h3 class="h4-style">Republican Rome</h3>
                 </div>
               </div>
             </a>
@@ -99,8 +101,8 @@
             <a href="#">
               <div class="card center hoverable">
                 <div class="card-image">
-                  <img src="http://placehold.it/160x120">
-                  <h4>Imperial Rome</h4>
+                  <img src="images/demo/cat-demo-3@2x.jpg">
+                  <h3 class="h4-style">Imperial Rome</h3>
                 </div>
               </div>
             </a>
@@ -110,8 +112,8 @@
             <a href="#">
               <div class="card center hoverable">
                 <div class="card-image">
-                  <img src="http://placehold.it/160x120">
-                  <h4>Dark Ages</h4>
+                  <img src="images/demo/cat-demo-1@2x.jpg">
+                  <h3 class="h4-style">Dark Ages</h3>
                 </div>
               </div>
             </a>
@@ -121,8 +123,8 @@
             <a href="#">
               <div class="card center hoverable">
                 <div class="card-image">
-                  <img src="http://placehold.it/160x120">
-                  <h4>Medieval Europe</h4>
+                  <img src="images/demo/cat-demo-2@2x.jpg">
+                  <h3 class="h4-style">Medieval Europe</h3>
                 </div>
               </div>
             </a>
@@ -132,8 +134,8 @@
             <a href="#">
               <div class="card center hoverable">
                 <div class="card-image">
-                  <img src="http://placehold.it/160x120">
-                  <h4>Napoleonic Wars</h4>
+                  <img src="images/demo/cat-demo-3@2x.jpg">
+                  <h3 class="h4-style">Napoleonic Wars</h3>
                 </div>
               </div>
             </a>
@@ -143,8 +145,8 @@
             <a href="#">
               <div class="card center hoverable">
                 <div class="card-image">
-                  <img src="http://placehold.it/160x120">
-                  <h4>World War I</h4>
+                  <img src="images/demo/cat-demo-1@2x.jpg">
+                  <h3 class="h4-style">World War I</h3>
                 </div>
               </div>
             </a>
@@ -154,8 +156,19 @@
             <a href="#">
               <div class="card center hoverable">
                 <div class="card-image">
-                  <img src="http://placehold.it/160x120">
-                  <h4>World War II</h4>
+                  <img src="images/demo/cat-demo-2@2x.jpg">
+                  <h3 class="h4-style">World War II</h3>
+                </div>
+              </div>
+            </a>
+        </li>
+
+        <li class="col s6 m4 hide-on-small-only">
+            <a href="#">
+              <div class="card center hoverable">
+                <div class="card-image">
+                  <img src="images/demo/cat-demo-3@2x.jpg">
+                  <h3 class="h4-style">Large Only</h3>
                 </div>
               </div>
             </a>
@@ -167,7 +180,7 @@
 
     <section class="row all-periods boxed-content"><!-- all periods -->
 
-      <h4 class="col s5">All Periods</h4>
+      <h2 class="col s5 h4-style">All Periods</h2>
 
       <div class="input-field col s6 right">
         <select>
@@ -181,7 +194,7 @@
         
           <li class="collection-item avatar">
             <a href="#">
-              <img src="http://placehold.it/80x80" class="circle">
+              <img src="images/demo/cat-demo-1@2x.jpg" class="circle">
               <span class="title">Ancient World</span>
               <span class="secondary-content"><i class="material-icons">keyboard_arrow_right</i></span>
            </a>
@@ -189,7 +202,7 @@
 
           <li class="collection-item avatar">
             <a href="#">
-              <img src="http://placehold.it/80x80" class="circle">
+              <img src="images/demo/cat-demo-1@2x.jpg" class="circle">
               <span class="title">Republican Rome</span>
               <span class="secondary-content"><i class="material-icons">keyboard_arrow_right</i></span>
             </a>
@@ -197,7 +210,7 @@
 
           <li class="collection-item avatar">
             <a href="#">
-              <img src="http://placehold.it/80x80" class="circle">
+              <img src="images/demo/cat-demo-2@2x.jpg" class="circle">
               <span class="title">Imperial Rome</span>
               <span class="secondary-content"><i class="material-icons">keyboard_arrow_right</i></span>
             </a>
@@ -205,7 +218,7 @@
 
           <li class="collection-item avatar">
             <a href="#">
-              <img src="http://placehold.it/80x80" class="circle">
+              <img src="images/demo/cat-demo-3@2x.jpg" class="circle">
               <span class="title">Late Antiquity</span>
               <span class="secondary-content"><i class="material-icons">keyboard_arrow_right</i></span>
             </a>
@@ -213,7 +226,7 @@
 
           <li class="collection-item avatar">
             <a href="#">
-              <img src="http://placehold.it/80x80" class="circle">
+              <img src="images/demo/cat-demo-1@2x.jpg" class="circle">
               <span class="title">Dark Ages</span>
               <span class="secondary-content"><i class="material-icons">keyboard_arrow_right</i></span>
             </a>
@@ -221,7 +234,7 @@
 
           <li class="collection-item avatar">
             <a href="#">
-              <img src="http://placehold.it/80x80" class="circle">
+              <img src="images/demo/cat-demo-2@2x.jpg" class="circle">
               <span class="title">Medieval Europe</span>
               <span class="secondary-content"><i class="material-icons">keyboard_arrow_right</i></span>
             </a>
@@ -229,7 +242,7 @@
 
           <li class="collection-item avatar">
             <a href="#">
-              <img src="http://placehold.it/80x80" class="circle">
+              <img src="images/demo/cat-demo-3@2x.jpg" class="circle">
               <span class="title">Medieval Asia</span>
               <span class="secondary-content"><i class="material-icons">keyboard_arrow_right</i></span>
             </a>
@@ -237,7 +250,7 @@
 
           <li class="collection-item avatar">
             <a href="#">
-              <img src="http://placehold.it/80x80" class="circle">
+              <img src="images/demo/cat-demo-1@2x.jpg" class="circle">
               <span class="title">Ukrainian Cossack Revolt</span>
               <span class="secondary-content"><i class="material-icons">keyboard_arrow_right</i></span>
             </a>
@@ -245,7 +258,7 @@
 
           <li class="collection-item avatar">
             <a href="#">
-              <img src="http://placehold.it/80x80" class="circle">
+              <img src="images/demo/cat-demo-2@2x.jpg" class="circle">
               <span class="title">War of Devolution</span>
               <span class="secondary-content"><i class="material-icons">keyboard_arrow_right</i></span>
             </a>
@@ -253,7 +266,7 @@
 
           <li class="collection-item avatar">
             <a href="#">
-              <img src="http://placehold.it/80x80" class="circle">
+              <img src="images/demo/cat-demo-3@2x.jpg" class="circle">
               <span class="title">War of the Holy League 1683</span>
               <span class="secondary-content"><i class="material-icons">keyboard_arrow_right</i></span>
             </a>
@@ -271,45 +284,132 @@
     </a>
   </div>
 
-  <footer class="page-footer grey">
+  <footer class="page-footer">
     <div class="container">
-      
-      <div class="row">
 
-        <div class="col s12 center">
-          <a href="#" class="footer-logo"></a>
-        </div>
+        <div class="col s8 offset-s2 footer-content footer-links">
+          <div class="row">
+            <div class="col s12 m6 social-links">
+              <h4>Join the conversation</h4>
+              <ul>
+                <li><a class="link facebook" href="#!">Facebook</a></li>
+                <li><a class="link twitter" href="#!">Twitter</a></li>
+              </ul>
+            </div>
 
-        <div class="col s12 center">
-          <h5 class="white-text">Additional Informaton</h5>
-          <ul>
-            <li><a class="white-text" href="/about">About</a></li>
-            <li><a class="white-text" href="/contact">Contact</a></li>
-            <li><a class="white-text" href="/faqs">FAQs</a></li>
-            <li><a class="white-text" href="/terms-and-conditions">Terms &amp; Privacy</a></li>
-            <li><a class="white-text" href="/sitemap">Sitemap</a></li>
-          </ul>
+            <div class="col s12 m6 site-links">
+              <h4>Additional Informaton</h4>
+              <ul>
+                <li><a class="link" href="/about">About</a></li>
+                <li><a class="link" href="/contact">Contact</a></li>
+                <li><a class="link" href="/faqs">FAQs</a></li>
+                <li><a class="link" href="/terms-and-conditions">Terms &amp; Privacy</a></li>
+                <li><a class="link" href="/sitemap">Sitemap</a></li>
+              </ul>
+            </div>
+          </div>
 
-        <hr />  
-
-          <h5 class="white-text">Social</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Facebook</a></li>
-            <li><a class="white-text" href="#!">Twitter</a></li>
-          </ul>
-
-        <hr />  
-        
         </div>
      
+      <div class="col s12 center footer-content">
+        <a href="#" class="footer-logo"></a>
       </div>
 
-      <div class="container footer-copyright center">
-          <p>Site content &copy; 2002, 2009, 2016. All rights reserved. Manufacturer logos and trademarks acknowledged.</p>
+      <div class="center footer-content footer-copyright">
+          <small>Site content &copy; 2002, 2009, 2016. All rights reserved. Manufacturer logos and trademarks acknowledged.</small>
       </div>
 
     </div>
   </footer>
+
+  <div id="modalSearch" class="modal modal-fixed-footer search"><!-- search modal -->
+      <div class="modal-content">
+
+        <form>
+
+          <div class="row">
+            <div class="input-field col s9 search-field">
+              <input placeholder="Keyword" id="search" type="search" required>
+              <label for="search"></label>
+              <i class="material-icons">close</i>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s12">
+              <label>Time Period:</label>
+            </div>
+            <div class="input-field col s5">
+              <input placeholder="From" id="period_from" type="text" class="validate">
+            </div>
+            <div class="input-field col s5 right">
+              <input placeholder="To" id="period_to" type="text" class="validate">
+            </div>
+            <div class="input-field col s12">
+            <select>
+              <option value="" disabled selected>Manufacturer</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+              </select>
+            </div>
+            <div class="input-field col s12">
+            <select>
+              <option value="" disabled selected>Year First Released</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+              </select>
+            </div>
+            <div class="input-field col s12">
+            <select>
+              <option value="" disabled selected>Height Status</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+              </select>
+            </div>
+            <div class="input-field col s12">
+            <select>
+              <option value="" disabled selected>Plastic Colour</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+              </select>
+            </div>
+            <div class="input-field col s12">
+            <select>
+              <option value="" disabled selected>Nationality</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+              </select>
+            </div>
+            <div class="input-field col s12">
+            <select>
+              <option value="" disabled selected>Type</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+              </select>
+            </div>
+            <div class="col s12 center-align">
+              <button class="btn waves-effect waves-light" type="submit" name="action">Search</button>
+            </div>
+          </div>
+
+          <div class="center-align">
+            <a class="waves-effect waves-teal btn-flat">Hide Advanced Search</a>
+          </div>
+
+        </form>
+      
+      </div>
+
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect btn-flat ">Close</a>
+      </div>
+    </div><!--/ search modal -->
 
 
   <!--  Scripts-->
@@ -317,8 +417,11 @@
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   
-  <script type="text/javascript"> // for select box
-    $(document).ready(function() {
+  <script type="text/javascript">
+    $(document).ready(function(){
+      // for modal
+      $('.modal-trigger').leanModal();
+      // for select
       $('select').material_select();
     });
   </script>

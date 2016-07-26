@@ -32,9 +32,20 @@ $psr-beige: (
   "darken-4":   #817966
   );
 
-
 $psr-gold: (
   "base":  #F7D893
+  );
+
+$psr-red: (
+  "lighten-4":  #ab797b,
+  "lighten-3":  #9d6265,
+  "lighten-2":  #8f4c4f,
+  "lighten-1":  #813639,
+  "base":       #732024,
+  "darken-1": #671c20,
+  "darken-2": #5c191c,
+  "darken-3": #501619,
+  "darken-4": #451315,
   );
 
 $materialize-red: (
@@ -372,6 +383,7 @@ $colors: (
   "psr-green": $psr-green,
   "psr-beige": $psr-beige,
   "psr-gold": $psr-gold,
+  "psr-red": $psr-red,
   "materialize-red": $materialize-red,
   "red": $red,
   "pink": $pink,

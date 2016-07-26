@@ -207,8 +207,6 @@ video.responsive-video {
 
 // Breadcrumbs
 .breadcrumb {
-  font-size: 18px;
-  color: rgba(255,255,255, .7);
 
   i,
   [class^="mdi-"], [class*="mdi-"],
@@ -499,7 +497,7 @@ td, th{
 
   .collection-item {
     background-color: $collection-bg-color;
-    line-height: 1.5rem;
+    line-height: 2.8rem;
     padding: 10px 20px;
     margin: 0;
     border-bottom: 1px solid $collection-border-color;
@@ -587,8 +585,10 @@ td, th{
 // Made less specific to allow easier overriding
 .secondary-content {
   float: right;
-  color: $secondary-color;
+  //color: $secondary-color;
+  color: inherit;
 }
+
 .collapsible .collection {
   margin: 0;
   border: none;

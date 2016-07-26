@@ -2,17 +2,25 @@
 
 .breadcrumb {
 	height: auto;
-	font-size: inherit;
-	line-height: 2rem;
-	color: rgba(000,000,000, .7);
-	line-height: 2rem;
 	background: none;
+	line-height: 2rem;
+	@extend .z-depth-0;
+	padding-top: 10px;
 
-	&:before {
-		color: rgba(000,000,000, .7);
+	.row {
+		margin-bottom: 0;
 	}
 
-	&:last-child {
-    	color: #000;
+	a {
+		color: $link-color-light;
+		font-weight: $weight-medium;
+	}
+
+	&:before {
+		color: $link-color-light;
+	}
+
+	&:last-child {	
+    	color: $link-color;
   	}
 }

@@ -1,2 +1,59 @@
-
 // Category listings
+
+.category-page {
+
+	.collection {
+		background: $white;
+
+		.collection-item.avatar {
+			min-height: 62px;
+
+			a {
+				color: $off-black;
+			}
+		}
+	}
+
+	.all-periods {
+
+		.input-field {
+			margin-top: 0;
+		}
+
+		.select-wrapper input.select-dropdown {
+			margin: 0 0 10px 0;
+		}
+
+	}
+
+}
+
+@media #{$small-and-down} {
+
+	.category-page {
+
+		.all-periods {
+
+			.collection {
+				padding-left:0;
+				padding-right: 0;
+			}
+
+		}
+
+	}
+
+}
+
+@media #{$large-and-up} {
+
+	.category-page {
+
+		.breadcrumb {
+			padding-top: 40px;
+		}
+
+	}
+
+}
+
