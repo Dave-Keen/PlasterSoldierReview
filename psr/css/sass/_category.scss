@@ -2,6 +2,18 @@
 
 .category-page {
 
+	.input-field {
+		margin-top: 0;
+	}
+
+	.select-wrapper input.select-dropdown {
+		margin: 0 0 10px 0;
+	}
+
+	.subheader {
+		margin-bottom: 10px;
+	}
+
 	.collection {
 		background: $white;
 
@@ -12,18 +24,6 @@
 				color: $off-black;
 			}
 		}
-	}
-
-	.all-periods {
-
-		.input-field {
-			margin-top: 0;
-		}
-
-		.select-wrapper input.select-dropdown {
-			margin: 0 0 10px 0;
-		}
-
 	}
 
 }

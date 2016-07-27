@@ -37,3 +37,16 @@
 	}
 
 }
+
+// Tool tips
+.toast {
+
+	span {
+		position: relative;
+
+		i {
+			position: relative;
+			top: 5px;
+		}
+	}
+}
