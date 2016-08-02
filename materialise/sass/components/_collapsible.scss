@@ -11,12 +11,12 @@
   cursor: pointer;
   min-height: $collapsible-height;
   line-height: $collapsible-height;
-  padding: 0 1rem;
+  padding: 10px 12px;
   background-color: $collapsible-header-color;
   border-bottom: 1px solid $collapsible-border-color;
 
   i {
-    width: 2rem;
+    width: 1.4rem;
     font-size: 1.6rem;
     line-height: $collapsible-height;
     display: block;

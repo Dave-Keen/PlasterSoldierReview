@@ -225,7 +225,6 @@ video.responsive-video {
     font-weight: normal;
     font-style: normal;
     font-size: 25px;
-    margin: 0 10px 0 8px;
     -webkit-font-smoothing: antialiased;
   }
 
@@ -498,7 +497,7 @@ td, th{
   .collection-item {
     background-color: $collection-bg-color;
     line-height: 2.8rem;
-    padding: 10px 20px;
+    padding: 10px 12px;
     margin: 0;
     border-bottom: 1px solid $collection-border-color;
 
@@ -571,10 +570,7 @@ td, th{
     .collection-header {
       background-color: $collection-bg-color;
       border-bottom: 1px solid $collection-border-color;
-      padding: 10px 20px;
-    }
-    .collection-item {
-      padding-left: 30px;
+      padding: 10px 12px;
     }
     .collection-item.avatar {
       padding-left: 72px;
@@ -584,6 +580,7 @@ td, th{
 }
 // Made less specific to allow easier overriding
 .secondary-content {
+  font-weight: $weight-medium;
   float: right;
   //color: $secondary-color;
   color: inherit;
@@ -644,12 +641,12 @@ nav ul a span.badge {
 // Progress Bar
 .progress {
     position: relative;
-    height: 4px;
+    height: 8px;
     display: block;
     width: 100%;
     background-color: lighten($progress-bar-color, 40%);
     border-radius: 2px;
-    margin: $element-top-margin 0 $element-bottom-margin 0;
+    margin: 1.2rem 0 $element-bottom-margin 0;
     overflow: hidden;
   .determinate {
     position: absolute;

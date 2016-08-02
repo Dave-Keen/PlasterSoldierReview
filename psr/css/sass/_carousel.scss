@@ -1,0 +1,46 @@
+// for owl carousel
+	
+.owl-controls {
+	width: 50%;
+	margin: 10px auto 0 auto;
+	text-align: center;
+}
+
+.owl-prev {
+	display: none !important;
+}
+
+.owl-next {
+	@extend .owl-prev;
+}
+
+.owl-dots .owl-dot {
+	display: inline-block;
+	zoom: 1;
+}
+
+.owl-dots .owl-dot span {
+	width: 10px;
+	height: 10px;
+	margin: 5px 7px;
+	display: block;
+	background: $inactive;
+	@include border-radius(5px);
+}
+
+.owl-dots .owl-dot.active span {
+	background: $primary-color;
+}
+
+.owl-dots .owl-dot:hover span {
+	background: $primary-color-dark;
+} 
+
+.owl-item {
+	@include opacity(0.2);
+
+	&.active {
+		@include opacity(1);
+	}
+}
+

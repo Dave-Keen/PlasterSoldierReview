@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/base.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/custom.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/owl.carousel.css" rel="stylesheet">
 </head>
 
 <body>
@@ -23,22 +24,24 @@
         <a id="logo-container" class="left hide-on-large-only mobile-logo" href="/home"></a>
 
         <ul id="nav-mobile" class="right hide-on-large-and-up nav-mobile">
-          <li><a class="modal-trigger" href="#modal1"><i class="material-icons">search</i>Search</a></li>
-          <li class="hide-on-small-only"><a href="#!"><i class="material-icons">invert_colors</i>Compare</a></li>
+          <li><a class="modal-trigger" href="#modalSearch"><i class="material-icons">search</i>Search</a></li>
+          <li class="hide-on-small-only"><a href="/compare"><i class="material-icons">compare</i>Compare</a></li>
         </ul>
         
         <ul id="slide-out" class="side-nav fixed">
           <li class="logo">
             <a id="logo-container" href="#" class="nav-logo"></a>
           </li>
-          <li><a href="/home">Home</a></li>
-          <li><a href="/periods">Periods</a></li>
-          <li><a href="/manuafacturers">Manufacturers</a></li>
-          <li><a href="/features">Features</a></li>
-          <li><a href="/future-releases">Future Release</a></li>
-          <li><a href="/awaiting-reviews">Awaiting Reviews</a></li>
-          <li><a href="/news">News</a></li>
-          <li><a href="#/links">Links</a></li>
+          <li><a class="modal-trigger hide-on-med-and-down" href="#modalSearch">Search <i class="material-icons search-icon">search</i></a></li>
+          <li class="compare"><a class="hide-on-med-and-down" href="/compare">Compare <span>3 / 4 added</span> <i class="material-icons">chevron_right</i></a></li>
+          <li><a href="/home">Home <i class="material-icons">chevron_right</i></a></li>
+          <li><a href="/periods">Periods <i class="material-icons">chevron_right</i></a></li>
+          <li><a href="/manuafacturers">Manufacturers <i class="material-icons">chevron_right</i></a></li>
+          <li><a href="/features">Features <i class="material-icons">chevron_right</i></a></li>
+          <li><a href="/future-releases">Future Release <i class="material-icons">chevron_right</i></a></li>
+          <li><a href="/awaiting-reviews">Awaiting Reviews <i class="material-icons">chevron_right</i></a></li>
+          <li><a href="/news">News <i class="material-icons">chevron_right</i></a></li>
+          <li><a href="#/links">Links <i class="material-icons">chevron_right</i></a></li>
         </ul>
 
         <a href="#" data-activates="slide-out" class="button-collapse right"><i class="mdi-navigation-menu"></i>
@@ -49,131 +52,109 @@
     </nav>
 
   </header>
-
   <main class="row article-page">
 
-    <nav class="breadcrumb">
-      <div class="row nav-wrapper">
-        <div class="col s12">
-          <a href="#!" class="breadcrumb">Home</a>
-          <a href="#!" class="breadcrumb">Manufacturers</a>
-          <a href="#!" class="breadcrumb">Caesar</a>
-          <a href="#!" class="breadcrumb">Roman Legionary</a>
+    <article class="col s12 m12 l10 article-wrapper">
+
+      <nav class="breadcrumb">
+        <div class="row boxed-content">
+          <div class="col s12">
+            <a href="#!" class="breadcrumb">Home</a>
+            <a href="#!" class="breadcrumb">Manufacturers</a>
+            <a href="#!" class="breadcrumb">Caesar</a>
+            <a href="#!" class="breadcrumb">Roman Legionary</a>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
 
-    <article class="col s12 m12 l10">
-
-      <section class="row boxed-content"><!-- intro -->
-            <div class="col s12 l9">
+      <section class="row boxed-content intro"><!-- intro -->
+            <header class="col s12 m9 l9">
               <h1>Roman Legionary</h1>
-            </div>
-            <div class="col l3 right hide-on-small-only compare">
-                <a onclick="displayCustomHTMLToast()"><i class="material-icons">invert_colors</i> Add to Compare</a>
+            </header>
+            <div class="col m3 l3 right right-align hide-on-small-only compare">
+                <a onclick="displayCustomHTMLToast()"><i class="material-icons">compare</i> <span>Add to Compare</span></a>
             </div>
       </section><!--/ intro -->
 
       <section id="media" class="article-media boxed-content scrollspy"><!-- article media -->
 
-        <div class="slider"><!-- slider -->
-          <ul class="slides">
-            
-            <li class="default">
-              <img src="images/demo/slide-1.jpg"> <!-- random image -->
-              <div class="caption left-align hide-on-large-only">
-              <h3>Left Aligned Caption</h3>
-              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-              </div>
-            </li>
+        <div class="owl-carousel">
+          <div><img src="images/demo/slide-1.jpg" class="responsive-img"></div>
+          <div><img src="images/demo/slide-2.jpg" class="responsive-img"></div>
+          <div><img src="images/demo/slide-3.jpg" class="responsive-img"></div>
+        </div>
 
-            <li class="image-reveal"><!-- hide on document load. Reveal if 'more' button is clicked -->
-              <img src="images/demo/slide-2.jpg"> <!-- random image -->
-              <div class="caption right-align hide-on-large-only">
-              <h3>Right Aligned Caption</h3>
-              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-              </div>
-            </li>
+        <div class="center hide-on-med-and-down">
+            <a class="waves-effect waves-teal btn-flat image-reveal-toggle view-more-btn-content">View More</a>
+        </div>
 
-            <li class="image-reveal"><!-- hide on document load. Reveal if 'more' button is clicked -->
-              <img src="images/demo/slide-3.jpg"> <!-- random image -->
-              <div class="caption center-align hide-on-large-only">
-              <h3>This is our big Tagline!</h3>
-              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-              </div>
-            </li>
-
-            <div class="center">
-              <a class="waves-effect waves-teal btn-flat image-reveal-toggle view-more-btn-content">View More</a>
-            </div>
-
-          </ul>
-        </div><!--/ slider -->
-        <!-- notes to dev: tried combining material box for zoom, but doesn't work -->
-        <!-- may have to write some new JS for an alternative solution -->
-        <!-- need to add js hammer for swipe - refer to materialize documentation -->
-
-          
-
+        <!-- notes to dev: need to add image zoom -->
 
       </section><!--/ article media -->
 
       <div class="row boxed-content">
 
-        <section id="meta" class="row article-meta scrollspy"><!-- article meta -->
+        <section id="stats" class="col s12 article-meta scrollspy"><!-- article meta -->
 
-          <ul class="col s12">
-            <li class="manufacturer">Ceasar</li>
-            <li class="set-number">Set H041</li>
-            <li class="review-date">Review Date 23rd Jan 2016</li>
-          </ul>
+          <dl class="small-list">          
+            <dt class="manufacturer">Manufacture: </dt>
+            <dd class="manufacturer">Ceasar</dd>
+            <dt class="set-number">Set: </dt>
+            <dd class="set-number">H041</dd>
+            <dt class="review-date">Review date: </dt>
+            <dd class="review-date">3rd Jan 2016</dd>
+          </dl>
 
         </section><!--/ article meta -->
 
-        <section id="stats" class="stats scrollspy"><!-- article stats -->
+        <section class="stats scrollspy"><!-- article stats -->
 
-          <ul class="collection with-header">
+          <ul class="row collection with-header">
 
             <li class="collection-header">
-              <h2 class="header-stats">Stats</h2>
+              <i class="material-icons">donut_large</i><h2 class="h4-style header-stats">Stats</h2>
             </li>
           
-            <li class="collection-item date-released">
+            <li class="col s12 m5 collection-item date-released">
                 <span class="title">Date Released</span>
                 <span class="secondary-content">2007</span>
             </li>
 
-            <li class="collection-item contents">
+            <li class="col s12 m5 right collection-item contents">
                 <span class="title">Contents</span>
                 <span class="secondary-content">41 Figures</span>
             </li>
 
-            <li class="collection-item poses">
+            <li class="col s12 m5 collection-item poses">
                 <span class="title">Poses</span>
                 <span class="secondary-content">14</span>
             </li>
 
-            <li class="collection-item materials">
-                <span class="title">Materials</span>
-                <span class="secondary-content">Plastic (Medium Consistency)</span>
+            <li class="col s12 m5 right collection-item materials">
+              <div class="row">
+                <span class="col m4 alpha title">Materials</span>
+                <span class="col m8 right omega secondary-content right-align">
+                  <span>Plastic (Medium Consistency)</span>
+                </span>
+              </div>
             </li>
 
-            <li class="collection-item colours">
+            <li class="col s12 m5 collection-item colours">
                 <span class="title">Colours</span>
                 <span class="secondary-content">Grey</span>
             </li>
 
-            <li class="collection-item ave-height">
+            <li class="col s12 m5 right collection-item ave-height">
                 <span class="title">Average Height</span>
                 <span class="secondary-content">23mm (=1.66m)</span>
-                <span class="tertiary-content"><img src="http://placehold.it/60x40"></span>
+                <span class="tertiary-content"><div class="average-height one-5"></div></span>
             </li>
 
           </ul>
 
         </section><!--/ article stats -->
 
-        <section id="review" class="row review scrollspy"><!-- article review -->
+        <section id="review" class="row panel review scrollspy"><!-- article review -->
 
           <h2 class="col s12 header-review">Review</h2>
 
@@ -214,7 +195,12 @@
           </section><!--/ review content collaspible -->
 
           <div class="center">
-            <a class="waves-effect waves-teal btn-flat read-more-toggle read-more-btn-content">Read More</a>
+            <a class="waves-effect btn read-more-toggle read-more-btn-content">Read More</a>
+          </div>
+
+          <div class="social-share center"><!-- social share -->
+            <h4>Share this review</h4>
+            <div class="addthis_sharing_toolbox"></div>
           </div>
 
         </section><!--/ article review -->
@@ -224,7 +210,8 @@
           <ul class="collapsible" data-collapsible="accordion">
             <li class="ratings author">
               <div class="collapsible-header active">
-                <h2 class="header-ratings">Author Ratings</h2>
+                <i class="material-icons">star_rate</i><h2 class="h4-style header-ratings">Author Ratings</h2>
+                <i class="material-icons collapsible-icon">keyboard_arrow_down</i>
               </div>
               <div class="collapsible-body">
 
@@ -272,7 +259,8 @@
 
             <li class="ratings user">
               <div class="collapsible-header">
-                <h2 class="header-user-ratings">User Ratings</h2>
+                <i class="material-icons">supervisor_account</i><h2 class="h4-style header-user-ratings">User Ratings</h2>
+                <i class="material-icons collapsible-icon">keyboard_arrow_down</i>
               </div>
               <div class="collapsible-body">
                 <p>Content goes here</p>
@@ -281,7 +269,8 @@
 
             <li class="review-notes">
               <div class="collapsible-header">
-                <h2 class="header-review-notes">Review Notes</h2>
+                <i class="material-icons">note</i><h2 class="h4-style header-review-notes">Review Notes</h2>
+                <i class="material-icons collapsible-icon">keyboard_arrow_down</i>
               </div>
               <div class="collapsible-body">
                 <p>Content goes here</p>
@@ -290,7 +279,7 @@
 
             <li class="painting-guides">
               <div class="collapsible-header">
-                <h2 class="header-painting-guides">Painting Guides</h2>
+                <i class="material-icons">brush</i> <h2 class="h4-style header-painting-guides">Painting Guides</h2><i class="material-icons collapsible-icon">keyboard_arrow_down</i>
               </div>
               <div class="collapsible-body">
                 <p>Content goes here</p>
@@ -299,7 +288,7 @@
 
             <li class="further-reading">
               <div class="collapsible-header">
-                <h2 class="header-further-reading">Further Reading</h2>
+                <i class="material-icons">chrome_reader_mode</i><h2 class="h4-style header-further-reading">Further Reading</h2><i class="material-icons collapsible-icon">keyboard_arrow_down</i>
               </div>
               <div class="collapsible-body">
                 <p>Content goes here</p>
@@ -310,18 +299,8 @@
 
         </section><!--/ additional information -->
 
-        <section class="section social-share center"><!-- social share -->
-          <h4>Share this review (Add This)</h4>
-          <ul>
-            <li>Facebook</li>
-            <li>Twitter</li>
-            <li>Email</li>
-          </ul>
-        </section>
-        <!--/ social share -->
-        <!-- note to dev: need to integrate Add This -->
 
-        <section id="related" class="row related-reviews scrollspy"><!-- related reviews -->
+        <section id="related" class="row panel related-reviews scrollspy"><!-- related reviews -->
           
           <h2 class="col s12 header-related">Related Reviews</h2>
 
@@ -329,77 +308,72 @@
 
             <li class="row">
               <div class="col thumbnail">
-                <img src="http://placehold.it/80x80" alt="" class="responsive-img">
+                <a href="#">
+                  <img src="images/demo/article-listing-demo-2@2x.jpg" alt="" class="responsive-img">
+                </a>
               </div>
-              <div class="col s8 m10">
-                <p class="title col s12 m8">Russian War Monks and Russian War Monks Artillery</p>
-                <div class="col m4 hide-on-small-only compare">
-                  <a onclick="displayCustomHTMLToast()"><i class="material-icons">invert_colors</i> Add to Compare</a>
-                </div>
-                <p class="meta">
-                  <span>23rd Jan 2016 / Review</span>
-                  <span>Manufacturer, Period</span>
+              <div class="col s7 m8 l9">
+                <p class="title">
+                  <a href="#">Russian War Monks and Russian War Monks Artillery</a>
                 </p>
-                <p class="excerpt hide-on-med-and-down">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              </div>    
+                <p class="meta">
+                <span class="date">23rd Jan 2016</span>
+                <span class="info">Manufacturer</span>
+                </p>
+                <p class="excerpt hide-on-small-only">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div> 
+              <div class="hide-on-small-only compare">
+                <a onclick="displayCustomHTMLToast()"><i class="material-icons">compare</i></a>
+              </div>     
             </li>
 
             <li class="row">
               <div class="col thumbnail">
-                <img src="http://placehold.it/80x80" alt="" class="responsive-img">
+                <a href="#">
+                  <img src="images/demo/article-listing-demo-3@2x.jpg" alt="" class="responsive-img">
+                </a>
               </div>
-              <div class="col s8 m10">
-                <p class="title col s12 m8">Russian War Monks and Russian War Monks Artillery</p>
-                <div class="col m4 hide-on-small-only compare">
-                  <a onclick="displayCustomHTMLToast()"><i class="material-icons">invert_colors</i> Add to Compare</a>
-                </div>
-                <p class="meta">
-                  <span>23rd Jan 2016 / Review</span>
-                  <span>Manufacturer, Period</span>
+              <div class="col s7 m8 l9">
+                <p class="title">
+                  <a href="#">Russian War Monks and Russian War Monks Artillery</a>
                 </p>
-                <p class="excerpt hide-on-med-and-down">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="meta">
+                <span class="date">23rd Jan 2016</span>
+                <span class="info">Manufacturer</span>
+                </p>
+                <p class="excerpt hide-on-small-only">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </div>    
+              <div class="hide-on-small-only compare">
+                <a onclick="displayCustomHTMLToast()"><i class="material-icons">compare</i></a>
+              </div>     
             </li>
 
             <li class="row">
               <div class="col thumbnail">
-                <img src="http://placehold.it/80x80" alt="" class="responsive-img">
+                <a href="#">
+                  <img src="images/demo/article-listing-demo-1@2x.jpg" alt="" class="responsive-img">
+                </a>
               </div>
-              <div class="col s8 m10">
-                <p class="title col s12 m8">Russian War Monks and Russian War Monks Artillery</p>
-                <div class="col m4 hide-on-small-only compare">
-                  <a onclick="displayCustomHTMLToast()"><i class="material-icons">invert_colors</i> Add to Compare</a>
-                </div>
-                <p class="meta">
-                  <span>23rd Jan 2016 / Review</span>
-                  <span>Manufacturer, Period</span>
+              <div class="col s7 m8 l9">
+                <p class="title">
+                  <a href="#">Russian War Monks and Russian War Monks Artillery</a>
                 </p>
-                <p class="excerpt hide-on-med-and-down">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              </div>    
-            </li>
-
-            <li class="row">
-              <div class="col thumbnail">
-                <img src="http://placehold.it/80x80" alt="" class="responsive-img">
+                <p class="meta">
+                <span class="date">23rd Jan 2016</span>
+                <span class="info">Manufacturer</span>
+                </p>
+                <p class="excerpt hide-on-small-only">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </div>
-              <div class="col s8 m10">
-                <p class="title col s12 m8">Russian War Monks and Russian War Monks Artillery</p>
-                <div class="col m4 hide-on-small-only compare">
-                  <a onclick="displayCustomHTMLToast()"><i class="material-icons">invert_colors</i> Add to Compare</a>
-                </div>
-                <p class="meta">
-                  <span>23rd Jan 2016 / Review</span>
-                  <span>Manufacturer, Period</span>
-                </p>
-                <p class="excerpt hide-on-med-and-down">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              </div>    
+              <div class="hide-on-small-only compare">
+                <a onclick="displayCustomHTMLToast()"><i class="material-icons">compare</i></a>
+              </div>     
             </li>
-
-          <div class="center">
-            <a class="waves-effect waves-teal btn-flat">Load More Reviews (2 remaining)</a>
-          </div>
 
           </ul>
+
+          <div class="center">
+          <a class="waves-effect btn">Load more articles</a>
+        </div>
 
         </section><!--/ related reviews -->
         
@@ -418,7 +392,6 @@
     <div class="col l2 hide-on-med-and-down pushpin-wrapper">
       <ul class="row table-of-contents">
         <li><a href="#media">Gallery</a></li>
-        <li><a href="#meta">About</a></li>
         <li><a href="#stats">Stats</a></li>
         <li><a href="#review">Review</a></li>
         <li><a href="#ratings">Ratings and Info</a></li>
@@ -435,63 +408,170 @@
     </a>
   </div>
 
-  <footer class="page-footer grey">
+ <footer class="page-footer">
     <div class="container">
-      
-      <div class="row">
 
-        <div class="col s12 center">
-          <a href="#" class="footer-logo"></a>
-        </div>
+        <div class="col s8 offset-s2 footer-content footer-links">
+          <div class="row">
+            <div class="col s12 m6 social-links">
+              <h4>Join the conversation</h4>
+              <ul>
+                <li><a class="link facebook" href="#!">Facebook</a></li>
+                <li><a class="link twitter" href="#!">Twitter</a></li>
+              </ul>
+            </div>
 
-        <div class="col s12 center">
-          <h5 class="white-text">Additional Informaton</h5>
-          <ul>
-            <li><a class="white-text" href="/about">About</a></li>
-            <li><a class="white-text" href="/contact">Contact</a></li>
-            <li><a class="white-text" href="/faqs">FAQs</a></li>
-            <li><a class="white-text" href="/terms-and-conditions">Terms &amp; Privacy</a></li>
-            <li><a class="white-text" href="/sitemap">Sitemap</a></li>
-          </ul>
+            <div class="col s12 m6 site-links">
+              <h4>Additional Informaton</h4>
+              <ul>
+                <li><a class="link" href="/about">About</a></li>
+                <li><a class="link" href="/contact">Contact</a></li>
+                <li><a class="link" href="/faqs">FAQs</a></li>
+                <li><a class="link" href="/terms-and-conditions">Terms &amp; Privacy</a></li>
+                <li><a class="link" href="/sitemap">Sitemap</a></li>
+              </ul>
+            </div>
+          </div>
 
-        <hr />  
-
-          <h5 class="white-text">Social</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Facebook</a></li>
-            <li><a class="white-text" href="#!">Twitter</a></li>
-          </ul>
-
-        <hr />  
-        
         </div>
      
+      <div class="col s12 center footer-content">
+        <a href="#" class="footer-logo"></a>
       </div>
 
-      <div class="container footer-copyright center">
-          <p>Site content &copy; 2002, 2009, 2016. All rights reserved. Manufacturer logos and trademarks acknowledged.</p>
+      <div class="center footer-content footer-copyright">
+          <small>Site content &copy; 2002, 2009, 2016. All rights reserved. Manufacturer logos and trademarks acknowledged.</small>
       </div>
 
     </div>
   </footer>
 
+  <div id="modalSearch" class="modal modal-fixed-footer search"><!-- search modal -->
+      <div class="modal-content">
+
+        <form>
+
+          <div class="row">
+            <div class="input-field col s9 search-field">
+              <input placeholder="Keyword" id="search" type="search" required>
+              <label for="search"></label>
+              <i class="material-icons">close</i>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s12">
+              <label>Time Period:</label>
+            </div>
+            <div class="input-field col s5">
+              <input placeholder="From" id="period_from" type="text" class="validate">
+            </div>
+            <div class="input-field col s5 right">
+              <input placeholder="To" id="period_to" type="text" class="validate">
+            </div>
+            <div class="input-field col s12">
+            <select>
+              <option value="" disabled selected>Manufacturer</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+              </select>
+            </div>
+            <div class="input-field col s12">
+            <select>
+              <option value="" disabled selected>Year First Released</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+              </select>
+            </div>
+            <div class="input-field col s12">
+            <select>
+              <option value="" disabled selected>Height Status</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+              </select>
+            </div>
+            <div class="input-field col s12">
+            <select>
+              <option value="" disabled selected>Plastic Colour</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+              </select>
+            </div>
+            <div class="input-field col s12">
+            <select>
+              <option value="" disabled selected>Nationality</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+              </select>
+            </div>
+            <div class="input-field col s12">
+            <select>
+              <option value="" disabled selected>Type</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+              </select>
+            </div>
+            <div class="col s12 center-align">
+              <button class="btn waves-effect waves-light" type="submit" name="action">Search</button>
+            </div>
+          </div>
+
+          <div class="center-align">
+            <a class="waves-effect waves-teal btn-flat">Hide Advanced Search</a>
+          </div>
+
+        </form>
+      
+      </div>
+
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect btn-flat ">Close</a>
+      </div>
+    </div><!--/ search modal -->
+
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
   <script src="js/init.js"></script>
   
   <script type="text/javascript"> 
     $(document).ready(function(){ 
       
-      if (document.documentElement.clientWidth < 993) {
-        $('.slider').slider({full_width: false}); // for slider, download for large screens only
-                                                  // need to append a class to article-media to
-                                                  // display images in case the user scales their
-                                                  // browser down
-      }
+      $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        responsive:{
+            0:{
+                items:1,
+                nav: true,
+                dots: true,
+                margin:10
+            },
+
+            740:{
+                items:1,
+                stagePadding:100,
+                margin:0      
+            },
+
+            993:{
+                items:1,
+                nav: false,
+                dots: false,
+                stagepadding:0,
+                margin:10
+            }
+        }
+        })
 
       $('.materialboxed').materialbox(); // for image pop-up
-      $('.modal-trigger').leanModal(); // for modal
       $('.scrollspy').scrollSpy(); // for follow me links
       $('.pushpin-wrapper .row').pushpin({ top: $('.pushpin-wrapper').offset().top }); // for pushpin
 
@@ -521,6 +601,32 @@
     });
 
   </script>
+
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+  <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-579f9a6a3faad657"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      // for modal
+      $('.modal-trigger').leanModal();
+      // for select
+      $('select').material_select();
+    });
+
+      var displayCustomHTMLToast = function () { // for toast
+      var $toastContent = $('<span><i class="material-icons">compare</i> Set added to compare <br /></span>');
+      Materialize.toast($toastContent, 4000);
+      }
+
+      var displayCustomHTMLToastRemove = function () { // for toast remove
+      var $toastContentRemove = $('<span><i class="material-icons">compare</i> Set removed to compare <br /></span>');
+      Materialize.toast($toastContentRemove, 4000);
+      }
+
+
+  </script>
+
+
 
   </body>
 </html>

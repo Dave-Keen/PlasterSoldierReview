@@ -1,30 +1,157 @@
-// image figures
+
 .article-page {
 
-	figure {
-		margin: 0 0 1em 0;
-	}
-}
+	.intro {
 
+		.compare {
+			padding-top: 25px;
 
-// image modal
-.article-page {
+			&:hover {
+				cursor: pointer;
+			}
 
-	.modal.image {
-		width: 90%;
-
-		.modal-content {
-			padding: 0;
-			line-height: 0;
+			span {
+				font-size: $p-small;
+				vertical-align: super;
+			}
 		}
 	}
-}
 
-// ratings
-.ratings {
+	.stats {
 
-	.progress {
-		width: 50%;
+		.collection {
+			background: #fff;
+			padding-bottom: 20px;
+
+			.tertiary-content {
+				width: 84px;
+		    	display: block;
+		    	margin-left: auto;
+			}
+
+			.materials {
+				
+				.row {
+					margin-bottom: 0;
+				}
+
+				.secondary-content {
+
+					span {
+					    padding: 0.75rem 0;
+    					display: block;
+    					line-height: normal;
+					}
+				}
+			}
+		}
+
+	}
+
+	.collection-header i {
+	    width: 1.4rem;
+	    font-size: 1.6rem;
+	    line-height: 2.5rem;
+	    display: block;
+	    float: left;
+	    text-align: center;
+	    margin-right: 1rem;
+	}
+
+	.collapsible-header i {
+		line-height: 2.5rem;
+	}
+
+	i.material-icons.collapsible-icon {
+	    float: right;
+	    line-height: 0;
+	    margin-top: -16px;
+	}
+
+	.review-content {
+
+		& > p {
+			margin-top: 0;
+		}
+
+	}
+
+	.social-share {
+		margin-top: 20px;
 	}
 
 }
+
+@media #{$small-and-down} {
+
+	.article-page {
+
+		h1 {
+			margin-bottom: 0;
+		}
+
+		.article-wrapper {
+			padding: 0 !important;
+		}
+
+		.collapsible {
+			border-left: 0;
+			border-right: 0;
+		}
+
+	}
+
+}
+
+ @media #{$medium-and-up} {
+    
+  	.article-page {
+
+  		.article-wrapper {
+  			padding: 0;
+  		}
+
+		.article-media.boxed-content {
+			max-width: 100%;
+		}
+
+  	}
+
+ }
+
+  @media #{$large-and-up} {
+    
+  	.article-page {
+
+  		.breadcrumb {
+
+  			.col.s12 {
+  				padding-left: 0 !important;
+  			}
+  		}
+
+		header {
+  			padding-left: 0 !important;
+  		}
+
+  		.article-wrapper {
+			padding: 0 0.75rem;
+  		}
+
+		.article-media.boxed-content {
+			max-width: 700px;
+		}
+
+  	}
+
+ }
+
+@media screen and (max-width: 1080px) {
+	.pushpin-wrapper {
+		display: none;
+	}
+}
+
+
+
+

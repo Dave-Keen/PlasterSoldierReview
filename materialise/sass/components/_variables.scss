@@ -14,6 +14,7 @@ $link-color-active: color("psr-red", "darken-4") !default;
 $panel-color: color("shades", "white") !default;
 $white: #FFF !default;
 $body-color: #F9F9F9 !default;
+$inactive: color("grey", "lighten-2") !default;
 
 /*** Badges ***/
 $badge-bg-color: $secondary-color !default;
@@ -193,11 +194,11 @@ $collection-hover-bg-color: #ddd !default;
 $collection-link-color: $secondary-color !default;
 
 /* Progress Bar */
-$progress-bar-color: $secondary-color !default;
+$progress-bar-color: $primary-color !default;
 
 /* Sprite Sheet */
 $sprite-sheet-img: "../images/gui/sprite-sheet@2x.png" !default;
-$sprite-width: 300px !default;
-$sprite-height: 300px !default;
+$sprite-width: 400px !default;
+$sprite-height: 400px !default;
 
 
