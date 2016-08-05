@@ -1,0 +1,106 @@
+// Search Modal
+
+.modal {
+
+		label {
+			font-size: $p-normal;
+			color: $off-black;
+		}
+
+		.search-field {
+
+			.material-icons {
+				padding-top: 9px;
+			}
+
+		}
+
+		.input-field input {
+			padding-left: 5px;
+			margin: 0;
+		}
+
+		.input-field input[type=text]:focus {
+			background: $input-bg-color;
+		}
+
+
+		.input-field input[type=search] {
+			width: 100%;
+			padding-left: 5px;
+		}
+
+		.advanced-search-trigger {
+			display: block;
+			margin: 20px 0;
+
+			a {
+				text-decoration: underline;
+			}
+
+			i {
+				vertical-align: bottom;
+				color: $link-color;
+			}
+		}
+
+}
+
+@media #{$small-and-down} {
+
+	.modal.search {
+		height: 80%;
+		max-height: 80%;
+	}
+
+}
+
+
+@media #{$medium-and-up} {
+
+	.modal.search {
+		width: 60%;
+		height: 80%;
+		max-height: 80%;
+	}
+    
+}
+
+@media #{$large-and-up} {
+
+	.modal.modal-fixed-footer {
+		// reuse slider animation
+	}
+
+	.modal.modal-fixed-footer .modal-content {
+		height: calc(100%);
+	}
+
+	.modal.search {
+		width: 500px;
+		height:100%;
+		max-height: 100%;
+		top: 0 !important;
+		margin-left: 240px;
+		 @include border-radius(0);
+
+		 form {
+		 	margin-top: 114px;
+		 }
+
+		 .modal-close-large {
+		 	position: fixed;
+		 	top: 0;
+		 	right: -13px;
+		 }
+
+		 .input-field input {
+		 	height: 2.6rem;
+		 }
+	}
+    
+}
+
+
+
+

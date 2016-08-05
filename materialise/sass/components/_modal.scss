@@ -15,7 +15,11 @@
   border-radius: 2px;
   will-change: top, opacity;
 
-  @media #{$medium-and-down} {
+@media #{$small-and-down} {
+    width: 90%;
+  }
+
+  @media #{$medium-and-up} {
    width: 80%;
   }
 
@@ -23,9 +27,6 @@
     margin-top: 0;
   }
 
-  .modal-content {
-    padding: 24px;
-  }
   .modal-close {
     cursor: pointer;
   }

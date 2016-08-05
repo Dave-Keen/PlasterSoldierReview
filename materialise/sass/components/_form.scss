@@ -180,8 +180,6 @@ textarea.materialize-textarea {
 
   &:focus {
     background-color: $input-bg-color;
-    border: 0;
-    box-shadow: none;
     color: #444;
 
     & + label i,

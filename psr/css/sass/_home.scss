@@ -106,6 +106,10 @@
 
 		&.hero-mode {
 
+			> .panel {
+				border:none;
+			}
+
 			.intro, .last-updated {
 				position: relative;
 				z-index: 10;

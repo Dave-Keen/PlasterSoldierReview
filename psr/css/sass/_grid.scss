@@ -8,6 +8,19 @@
 	padding-right: 0 !important;
 }
 
+// Responsive Floats
+@media #{$small-and-down} {
+
+	.s-right {
+		float: right !important;
+	}
+
+	.s-left {
+		float: left !important;
+	}
+
+}
+
 // Clearing fix
 
 .clearfix:before, 
