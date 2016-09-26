@@ -15,6 +15,8 @@ $panel-color: color("shades", "white") !default;
 $white: #FFF !default;
 $body-color: #F9F9F9 !default;
 $inactive: color("grey", "lighten-2") !default;
+$warning: color("yellow", "lighten-2") !default;
+$error: color("red", "lighten-2") !default;
 
 /*** Badges ***/
 $badge-bg-color: $secondary-color !default;

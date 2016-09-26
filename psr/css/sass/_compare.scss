@@ -1,0 +1,75 @@
+.compare {
+
+	table {
+
+		th.compare {
+			width: 20%;
+			vertical-align: top;
+
+			a {
+				vertical-align: inherit;
+			}
+
+			img {
+				max-width: 120px;
+			}
+		}
+
+		th.attribute-label, th.attribute {
+			background: $border-color;
+		}
+
+		.remove {
+			font-size: $p-x-small;
+
+			i {
+				font-size: $p-small;
+			}
+		}
+
+
+
+	}
+	
+	.stats {
+
+		.collection {
+			background: #fff;
+			padding-bottom: 20px;
+
+			.tertiary-content {
+				width: 84px;
+		    	display: block;
+		    	margin-left: auto;
+			}
+
+			.materials {
+				
+				.row {
+					margin-bottom: 0;
+				}
+
+				.secondary-content {
+
+					span {
+					    padding: 0.75rem 0;
+    					display: block;
+    					line-height: normal;
+					}
+				}
+			}
+		}
+
+	}
+
+	.collection-header i {
+	    width: 1.4rem;
+	    font-size: 1.6rem;
+	    line-height: 2.5rem;
+	    display: block;
+	    float: left;
+	    text-align: center;
+	    margin-right: 1rem;
+	}
+
+}
