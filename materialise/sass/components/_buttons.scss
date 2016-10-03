@@ -1,5 +1,5 @@
 // shared styles
-.btn, .btn-flat {
+.btn, .btn-flat, .btn-secondary {
   border: none;
   border-radius: 2px;
   display: inline-block;
@@ -29,7 +29,7 @@
   }
 }
 // Shared icon styles
-.btn, .btn-floating, .btn-large, .btn-flat {
+.btn, .btn-floating, .btn-large, .btn-flat, .btn-secondary {
   i {
     font-size: $button-font-size-shared;
     line-height: inherit;
@@ -37,7 +37,7 @@
 }
 
 // Raised Button
-.btn {
+.btn, .btn-secondary {
   text-decoration:none;
   color: $button-color-raised;
   font-weight: $button-font-weight;
@@ -181,4 +181,15 @@ button.btn-floating {
 // Block button
 .btn-block {
   display: block;
+}
+
+// Ghost button
+.btn.ghost {
+  display: block;
+  width: 180px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.10);
+  border: 3px solid $ghost-color;
+  color: $ghost-color;
+  line-height: 2.8;
 }

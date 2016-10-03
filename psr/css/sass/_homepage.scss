@@ -1,0 +1,202 @@
+// Hero for medium and down devices
+.homepage {
+
+	.hero {
+		margin-bottom: 0;
+
+		.header {
+			h1 {
+				color: $white;
+			}
+		}
+
+		.article-type-badge {
+			position: static;
+			padding: 7px 12px;
+		}
+
+		.hero-titles {
+			margin-bottom: 0;
+		}
+
+		.title, .meta, .excerpt {
+			width: 90%;
+    		margin-left: auto;
+    		margin-right: auto;
+			color: $white;
+		}
+
+		.meta {
+			font-size: $p-small;
+		}
+
+		.excerpt {
+			margin-bottom: 20px;
+		}
+
+	}
+
+	.article-listing {
+
+		.row {
+			border: none;
+		}
+	}
+}
+
+@media #{$medium-and-up} { // Need to make header and last updated text central in 700px container
+
+	.homepage {
+
+		.hero {
+			max-width: 100%;
+			position: relative;
+			margin-bottom: 0;
+
+			.inner {
+				max-width: 700px;
+				margin: 0 auto;
+			}
+
+			.header {
+
+				h1 {
+					color: $white;
+					padding: 0 0.75rem;
+
+					span {
+						display: block;
+					}
+				}
+			}
+
+			.last-updated p {
+				font-weight: $weight-medium;
+				color: $secondary-color;
+				position: absolute;
+				padding: 0 0.75rem;
+				bottom: 10px;
+			}
+
+			h2 {
+				font-size: $h1-fontsize;
+			}
+
+			.title, .meta, .excerpt {
+				width: 70%;
+	    		margin-left: auto;
+	    		margin-right: auto;
+				color: $white;
+			}
+
+			.meta {
+				span {
+					display: inline;
+					margin:0 5px 0 0;
+				}
+			}
+		}
+	}
+}
+
+@media #{$large-and-up} {
+
+	.homepage {
+
+		.page-titles {
+			width: 90%;
+		}
+
+		.hero, .last-updated {
+			position: relative;
+			z-index: 10;
+		}
+
+		.hero {
+			margin-bottom: 0;
+			margin: 0 auto;	
+			padding-top: 40px;
+			background-size: cover !important;
+
+			.page-titles {
+				width: 90%;
+				position: relative;
+				margin-bottom: 60px;
+			}
+
+			.header {
+				width: 25%;
+
+				h1 {
+					font-size: $h1-x-small;
+					font-weight: $weight-medium;
+					color: $secondary-color;
+					margin: 0;
+					padding: 0;
+
+					span {
+						display: inline-block;
+					}
+				}
+
+				h1:after {
+				    content: "";
+				    position: absolute;
+				    left: 12px;
+				    top: 35px;
+				    height: 1px;
+				    width: 40px;
+				    border-bottom: 2px solid $secondary-color;
+				}
+			}
+
+			.last-updated {
+				width: 130px;
+				height: 28px;
+				
+				padding: 0;
+
+				time {
+					display: block;
+				}
+
+				p {
+					font-size: $p-x-small;
+					font-weight: $weight-medium;
+					color: $secondary-color;
+					text-align: right;
+					margin-top: 0.1rem;
+					bottom: 0;
+					top: 0;
+				}
+			}
+
+			h2 {
+				font-size: $h1-large;
+			}
+
+			.title, .meta, .excerpt {
+				width: 700px;
+	    		margin-left: auto;
+	    		margin-right: auto;
+				color: $white;
+			}
+
+			.view-more {
+				display: block;
+				width: 240px;
+				margin: 0 auto;
+				font-weight: $weight-medium;
+				color: $white;
+				text-align: center;
+				line-height: 1;
+				margin:80px auto 40px auto;
+
+				i {
+					display: block;
+					font-size: 3rem;
+				}
+			}
+		}
+	}
+}
