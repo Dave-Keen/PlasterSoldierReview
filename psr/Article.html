@@ -449,27 +449,29 @@
   <div id="modalSearch" class="modal modal-fixed-footer search"><!-- search modal -->
       <div class="modal-content">
 
+        <a href="#!" class="modal-action modal-close modal-close-large waves-effect btn-flat hide-on-med-and-down">Close</a>
+
         <form>
 
           <div class="row">
-            <div class="input-field col s9 search-field">
+            <div class="input-field col s12 m8 offset-m2 search-field">
               <input placeholder="Keyword" id="search" type="search" required>
               <label for="search"></label>
               <i class="material-icons">close</i>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col s12">
+          <div id="advancedSearch" class="row">
+            <div class="col s12 m8 offset-m2">
               <label>Time Period:</label>
             </div>
-            <div class="input-field col s5">
+            <div class="input-field col s5 m4 offset-m2">
               <input placeholder="From" id="period_from" type="text" class="validate">
             </div>
-            <div class="input-field col s5 right">
+            <div class="input-field col s5 m4 s-right">
               <input placeholder="To" id="period_to" type="text" class="validate">
             </div>
-            <div class="input-field col s12">
+            <div class="input-field col s12 m8 offset-m2">
             <select>
               <option value="" disabled selected>Manufacturer</option>
               <option value="1">Option 1</option>
@@ -477,7 +479,7 @@
               <option value="3">Option 3</option>
               </select>
             </div>
-            <div class="input-field col s12">
+            <div class="input-field col s12 m8 offset-m2">
             <select>
               <option value="" disabled selected>Year First Released</option>
               <option value="1">Option 1</option>
@@ -485,7 +487,7 @@
               <option value="3">Option 3</option>
               </select>
             </div>
-            <div class="input-field col s12">
+            <div class="input-field col s12 m8 offset-m2">
             <select>
               <option value="" disabled selected>Height Status</option>
               <option value="1">Option 1</option>
@@ -493,7 +495,7 @@
               <option value="3">Option 3</option>
               </select>
             </div>
-            <div class="input-field col s12">
+            <div class="input-field col s12 m8 offset-m2">
             <select>
               <option value="" disabled selected>Plastic Colour</option>
               <option value="1">Option 1</option>
@@ -501,7 +503,7 @@
               <option value="3">Option 3</option>
               </select>
             </div>
-            <div class="input-field col s12">
+            <div class="input-field col s12 m8 offset-m2">
             <select>
               <option value="" disabled selected>Nationality</option>
               <option value="1">Option 1</option>
@@ -509,7 +511,7 @@
               <option value="3">Option 3</option>
               </select>
             </div>
-            <div class="input-field col s12">
+            <div class="input-field col s12 m8 offset-m2">
             <select>
               <option value="" disabled selected>Type</option>
               <option value="1">Option 1</option>
@@ -517,21 +519,26 @@
               <option value="3">Option 3</option>
               </select>
             </div>
-            <div class="col s12 center-align">
-              <button class="btn waves-effect waves-light" type="submit" name="action">Search</button>
-            </div>
           </div>
 
-          <div class="center-align">
-            <a class="waves-effect waves-teal btn-flat">Hide Advanced Search</a>
+          <div class="col s12 center-align">
+            <button class="btn waves-effect waves-light" type="submit" name="action">Search</button>
+          </div>
+
+          <div class="center-align advanced-search-trigger">
+            <a class="advanced-search-toggle advanced-search-btn-content">Advanced Search</a><i class="material-icons">keyboard_arrow_down</i>
           </div>
 
         </form>
       
       </div>
 
-      <div class="modal-footer">
-        <a href="#!" class="modal-action modal-close waves-effect btn-flat ">Close</a>
+      <div class="modal-footer hide-on-large-only">
+        <a href="#!" class="modal-action modal-close waves-effect btn-flat">Close</a>
+      </div>
+
+      <div class="modal-footer hide-on-large-only">
+        <a href="#!" class="modal-action modal-close waves-effect btn-flat">Close</a>
       </div>
     </div><!--/ search modal -->
 
@@ -541,9 +548,7 @@
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/init.js"></script>
   
-  <script type="text/javascript"> 
-    $(document).ready(function(){ 
-      
+  <script type="text/javascript">      
       $('.owl-carousel').owlCarousel({
         loop:true,
         margin:10,
@@ -569,64 +574,11 @@
                 margin:10
             }
         }
-        })
-
-      $('.materialboxed').materialbox(); // for image pop-up
-      $('.scrollspy').scrollSpy(); // for follow me links
-      $('.pushpin-wrapper .row').pushpin({ top: $('.pushpin-wrapper').offset().top }); // for pushpin
-
-      $('.image-reveal').addClass('hide'); // for image reveal toggle
-      $('.image-reveal-toggle').on('click', function() {
-        $('.image-reveal').toggleClass('hide');
-      });
-
-      $('.read-more-content').addClass('hide'); // for read more toggle
-      $('.read-more-toggle').on('click', function() {
-        $('.read-more-content').toggleClass('hide');
-      });
-
-      $(".read-more-btn-content").click(function () { // for button read more / less label toggle
-        $(this).text(function(i, text){
-          return text === "Read More" ? "Read Less" : "Read More";
-        })
-      });
-
-      $(".view-more-btn-content").click(function () { // for button view more / less label toggle
-        $(this).text(function(i, text){
-          return text === "View More" ? "View Less" : "View More";
-        })
-      });
-
-
-    });
-
+    })
   </script>
 
   <!-- Go to www.addthis.com/dashboard to customize your tools -->
   <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-579f9a6a3faad657"></script>
-
-  <script type="text/javascript">
-    $(document).ready(function(){
-      // for modal
-      $('.modal-trigger').leanModal();
-      // for select
-      $('select').material_select();
-    });
-
-      var displayCustomHTMLToast = function () { // for toast
-      var $toastContent = $('<span><i class="material-icons">compare</i> Set added to compare <br /></span>');
-      Materialize.toast($toastContent, 4000);
-      }
-
-      var displayCustomHTMLToastRemove = function () { // for toast remove
-      var $toastContentRemove = $('<span><i class="material-icons">compare</i> Set removed to compare <br /></span>');
-      Materialize.toast($toastContentRemove, 4000);
-      }
-
-
-  </script>
-
-
 
   </body>
 </html>

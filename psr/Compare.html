@@ -233,7 +233,7 @@
     </div>
   </footer>
 
-  <div id="modalSearch" class="modal modal-fixed-footer search"><!-- search modal -->
+ <div id="modalSearch" class="modal modal-fixed-footer search"><!-- search modal -->
       <div class="modal-content">
 
         <a href="#!" class="modal-action modal-close modal-close-large waves-effect btn-flat hide-on-med-and-down">Close</a>
@@ -313,7 +313,7 @@
           </div>
 
           <div class="center-align advanced-search-trigger">
-            <a class="advanced-search-toggle read-more-btn-content">Advanced Search</a><i class="material-icons">keyboard_arrow_down</i>
+            <a class="advanced-search-toggle advanced-search-btn-content">Advanced Search</a><i class="material-icons">keyboard_arrow_down</i>
           </div>
 
         </form>
@@ -334,28 +334,6 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-
-  <script type="text/javascript">
-    $(document).ready(function(){
-      // for modal
-      $('.modal-trigger').leanModal();
-      // for select
-      $('select').material_select();
-    });
-
-    $('#advancedSearch').addClass('hide'); // for read more toggle
-    $('.advanced-search-toggle').on('click', function() {
-        $('#advancedSearch').toggleClass('hide');
-      });
-
-    $(".read-more-btn-content").click(function () { // for button read more / less label toggle
-        $(this).text(function(i, text){
-          return text === "Advanced Search" ? "Hide Advanced Search" : "Advanced Search";
-        })
-    });
-
-
-  </script>
 
   </body>
 </html>
