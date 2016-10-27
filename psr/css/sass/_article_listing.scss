@@ -78,6 +78,10 @@
 			top: -23px;
 		}
 	}
+
+	.excerpt {
+		margin-bottom: 16px;
+	}
 }
 
 @media #{$medium-and-up} {
@@ -93,6 +97,10 @@
 			}
 		}
 
+		.title {
+			width: 78%;
+		}
+
 		.meta {
 			margin-bottom: 0.2rem;
 		}
@@ -102,4 +110,15 @@
 		}
 
 	}
+}
+
+@media #{$large-and-up} {
+
+	.article-listing {
+
+		.title {
+			width: 100%;
+		}
+	}
+
 }

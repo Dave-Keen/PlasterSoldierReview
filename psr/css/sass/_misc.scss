@@ -122,3 +122,35 @@ dl.small-list {
 		padding-top: 10px;
 	}
 }
+
+// Image Placeholders
+
+.article-listing {
+
+	.thumbnail {
+
+		img {
+			min-width: 100px;
+			min-height: 80px;
+			@include sprite-sheet(0 -248px);
+			background-size: 100px 330px;
+		}
+
+		@media #{$medium-and-up} {
+
+			img {
+				min-width: 150px;
+				min-height: 120px;
+				@include sprite-sheet(0 -360px);
+			}
+			
+		}
+
+	}
+
+}
+
+.collection .collection-item.avatar .circle {
+	@include sprite-sheet(0 -310px);
+}
+

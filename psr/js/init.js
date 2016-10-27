@@ -63,27 +63,11 @@
 		})
 	});
 
+	// scroll to top
+		$('#top').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});
+
   });
 })(jQuery);
-
-// compare
-
-// toast 'compare added' 
-var displayCustomHTMLToast = function() {
-	var $toastContent = $('<span><i class="material-icons">compare</i> Set added to compare <br /></span>');
-	Materialize.toast($toastContent, 4000);
-}
-
-// toast 'compare removed'
-var displayCustomHTMLToastRemove = function() {
-	var $toastContentRemove = $('<span><i class="material-icons">compare</i> Set removed to compare <br /></span>');
-Materialize.toast($toastContentRemove, 4000);
-}
-
-
-
-
-    
-    
-
-

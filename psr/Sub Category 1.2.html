@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>PSR | Compare</title>
+  <title>PSR | Sub Category</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -52,140 +52,179 @@
 
   </header>
 
-  <main class="compare">
+  <main class="category-page">
 
     <nav class="breadcrumb">
       <div class="row boxed-content">
         <div class="col s12">
           <a href="#!" class="breadcrumb">Home</a>
-          <a href="#!" class="breadcrumb">Compare</a>
+          <a href="#!" class="breadcrumb">Periods</a>
+          <a href="#!" class="breadcrumb">Imperial Rome</a>
         </div>
       </div>
     </nav>
 
     <section class="row boxed-content"><!-- intro -->
           <div class="col s12">
-            <h1>Compare</h1>
+            <h1>Imperial Rome</h1>
           </div>
     </section><!--/ intro -->
 
-    <section class="row compare-grid-empty boxed-content"><!-- compare grid empty -->
+    <section class="row boxed-content"><!-- article listing -->
 
-      <div class="row">
-        <div class="col s12 panel notification warning">
-          <p>Your compare list is empty. Add up to 4 sets to compare</p>
+      <div class="row controls"><!-- sort and filters -->
+
+        <div class="input-field col s6">
+          <select>
+            <option value="" disabled selected>Sort: Default</option>
+            <option value="1">Name (A - Z)</option>
+            <option value="1">Name (Z - A)</option>
+          </select>
         </div>
+
+        <div class="input-field col s6 right">
+          <select>
+            <option value="" disabled selected>Filter: Default</option>
+            <option value="1">Filter A</option>
+            <option value="1">Filter B</option>
+            <option value="1">Filter C</option>
+            <option value="1">Filter D</option>
+          </select>
+        </div>
+
       </div>
 
-    </section><!--/ compare grid empty -->
-
-    <section class="row hide-on-med-and-up boxed-content"><!-- compare on small screens info -->
-    
-      <div class="col s12">
-        <div class="card-panel notification warning">
-          <p><i class="material-icons">warning</i> Whilst it is possible to use our compare feature on small devices we strongly recommend using a larger screen for best results.</p>
-        </div>
+      <div class="row subheader">
+        <h2 class="col s12 h4-style">All Reviews</h2>
       </div>
 
-    </section><!--/ compare on small screens info -->
+      <div class="row panel">
 
-    <section class="row compare-grid boxed-content"><!-- compare grid -->
+        <section class="article-listing boxed-content"><!-- article listing -->
+          
+          <ul>
 
-     <table class="highlight bordered panel">
-        <thead>
-          <tr>
-            <th class="attribute">
-              Set
-            </th>
-            <th class="compare item-1">
-              <div class="right-align">
-                <a href="" class="remove"><i class="material-icons">delete</i> Remove</a>
+            <li class="row">
+              <div class="col thumbnail">
+                <a href="#">
+                  <img src="/" alt="" class="responsive-img">
+                </a>
               </div>
-              <img class="responsive-img" src="http://placehold.it/400x320" alt="">
-              <h2 class="h4-style">Airfix Romans</h2>
-            </th>
-            <th class="compare item-2">
-              <div class="right-align">
-                <a href="" class="remove"><i class="material-icons">delete</i> Remove</a>
-              </div>
-              <img class="responsive-img" src="http://placehold.it/400x320" alt="">
-              <h2 class="h4-style">WWII New Zealand Troops</h2>
-            </th>
-            <th class="compare item-3">
-              <div class="right-align">
-                <a href="" class="remove"><i class="material-icons">delete</i> Remove</a>
-              </div>
-              <img class="responsive-img" src="http://placehold.it/400x320" alt="">
-              <h2 class="h4-style">Hannibal's Carthaginians - Spanish Infantry</h2>
-            </th>
-            <th class="compare item-4">
-              <div class="right-align">
-                <a href="" class="remove"><i class="material-icons">delete</i> Remove</a>
-              </div>
-              <img class="responsive-img" src="http://placehold.it/400x320" alt="">
-              <h2 class="h4-style">Carthaginian Allies</h2>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="date-released">
-            <th class="attribute-label">Date Released</th>
-            <td>2007</td>
-            <td>2009</td>
-            <td>2001</td>
-            <td>2014</td>
-          </tr>
-          <tr class="contents">
-            <th class="attribute-label">Contents</th>
-            <td>41 Figures</td>
-            <td>20 Figures</td>
-            <td>10 Figures</td>
-            <td>50 Figures</td>
-          </tr>
-          <tr class="poses">
-            <th class="attribute-label">Poses</th>
-            <td>14</td>
-            <td>12</td>
-            <td>3</td>
-            <td>18</td>
-          </tr>
-          <tr class="materials">
-            <th class="attribute-label">Materials</th>
-            <td>Plastic (Medium Consistency)</td>
-            <td>Plastic (Hard Consistency)</td>
-            <td>Plastic (Soft Consistency)</td>
-            <td>Plastic (Medium Consistency)</td>
-          </tr>
-          <tr class="colours">
-            <th class="attribute-label">Colours</th>
-            <td>Grey</td>
-            <td>Green</td>
-            <td>Brown</td>
-            <td>Blue</td>
-          </tr>
-          <tr class="average-height">
-            <th class="attribute-label">Average Height</th>
-            <td>
-              <div class="average-height two-5"></div>
-              <span>23mm (=1.66m)</span>
-            </td>
-            <td>
-              <div class="average-height three-5"></div>
-              <span>23mm (=1.66m)</span>
-            </td>
-            <td>
-              <div class="average-height four-5"></div>
-              <span>23mm (=1.66m)</span>
-            </td>
-            <td>
-              <div class="average-height one-5"></div>
-              <span>23mm (=1.66m)</span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+              <div class="col s7 m8 l9">
+                <p class="title">
+                  <a href="#">Russian War Monks and Russian War Monks Artillery</a>
+                </p>
+                <p class="meta">
+                <span class="date">23rd Jan 2016</span>
+                <span class="info">Manufacturer</span>
+                </p>
+                <p class="excerpt hide-on-small-only">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div> 
+              <div class="hide-on-small-only compare">
+                <input id="SampleItemID_1" type="checkbox" class="filled-in" onclick="SwitchValueInCookie(this); ComparisonSummary();">
+                <label for="SampleItemID_1">Compare</label>
+              </div>   
+            </li>
 
-    </section><!--/ compare grid -->
+            <li class="row">
+              <div class="col thumbnail">
+                <a href="#">
+                  <img src="images/demo/article-listing-demo-3@2x.jpg" alt="" class="responsive-img">
+                </a>
+              </div>
+              <div class="col s7 m8 l9">
+                <p class="title">
+                  <a href="#">Russian War Monks and Russian War Monks Artillery</a>
+                </p>
+                <p class="meta">
+                <span class="date">23rd Jan 2016</span>
+                <span class="info">Manufacturer</span>
+                </p>
+                <p class="excerpt hide-on-small-only">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>    
+              <div class="hide-on-small-only compare">
+                <input id="SampleItemID_2" type="checkbox" class="filled-in" onclick="SwitchValueInCookie(this); ComparisonSummary();">
+                <label for="SampleItemID_2">Compare</label>
+              </div>      
+            </li>
+
+            <li class="row">
+              <div class="col thumbnail">
+                <a href="#">
+                  <img src="images/demo/article-listing-demo-1@2x.jpg" alt="" class="responsive-img">
+                </a>
+              </div>
+              <div class="col s7 m8 l9">
+                <p class="title">
+                  <a href="#">Russian War Monks and Russian War Monks Artillery</a>
+                </p>
+                <p class="meta">
+                <span class="date">23rd Jan 2016</span>
+                <span class="info">Manufacturer</span>
+                </p>
+                <p class="excerpt hide-on-small-only">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="hide-on-small-only compare">
+                <input id="SampleItemID_3" type="checkbox" class="filled-in" onclick="SwitchValueInCookie(this); ComparisonSummary();">
+                <label for="SampleItemID_3">Compare</label>
+              </div>       
+            </li>
+
+            <li class="row">
+              <div class="col thumbnail">
+                <a href="#">
+                  <img src="images/demo/article-listing-demo-2@2x.jpg" alt="" class="responsive-img">
+                </a>
+              </div>
+              <div class="col s7 m8 l9">
+                <p class="title">
+                  <a href="#">Russian War Monks and Russian War Monks Artillery</a>
+                </p>
+                <p class="meta">
+                <span class="date">23rd Jan 2016</span>
+                <span class="info">Manufacturer</span>
+                </p>
+                <p class="excerpt hide-on-small-only">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="hide-on-small-only compare">
+                <input id="SampleItemID_4" type="checkbox" class="filled-in" onclick="SwitchValueInCookie(this); ComparisonSummary();">
+                <label for="SampleItemID_4">Compare</label>
+              </div>       
+            </li>
+
+            <li class="row">
+              <div class="col thumbnail">
+                <a href="#">
+                  <img src="images/demo/article-listing-demo-3@2x.jpg" alt="" class="responsive-img">
+                </a>
+              </div>
+              <div class="col s7 m8 l9">
+                <p class="title">
+                  <a href="#">Russian War Monks and Russian War Monks Artillery</a>
+                </p>
+                <p class="meta">
+                <span class="date">23rd Jan 2016</span>
+                <span class="info">Manufacturer</span>
+                </p>
+                <p class="excerpt hide-on-small-only">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div> 
+              <div class="hide-on-small-only compare">
+                <input id="SampleItemID_5" type="checkbox" class="filled-in" onclick="SwitchValueInCookie(this); ComparisonSummary();">
+                <label for="SampleItemID_5">Compare</label>
+              </div>         
+            </li>
+
+          </ul>
+
+          <div class="center">
+            <a class="waves-effect btn">Load more articles</a>
+          </div>
+
+        </section><!--/ article listing -->
+
+      </div><!--/ panel -->
+
+    </section>
 
   </main>
 
@@ -233,7 +272,7 @@
     </div>
   </footer>
 
- <div id="modalSearch" class="modal modal-fixed-footer search"><!-- search modal -->
+  <div id="modalSearch" class="modal modal-fixed-footer search"><!-- search modal -->
       <div class="modal-content">
 
         <a href="#!" class="modal-action modal-close modal-close-large waves-effect btn-flat hide-on-med-and-down">Close</a>
@@ -335,6 +374,6 @@
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script src="js/compare.js"></script>
-
+  
   </body>
 </html>

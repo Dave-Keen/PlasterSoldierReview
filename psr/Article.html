@@ -9,8 +9,8 @@
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/base.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/custom.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/owl.carousel.css" rel="stylesheet">
+  <link href="css/custom.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 
 <body>
@@ -72,7 +72,8 @@
               <h1>Roman Legionary</h1>
             </header>
             <div class="col m3 l3 right right-align hide-on-small-only compare">
-                <a onclick="displayCustomHTMLToast()"><i class="material-icons">compare</i> <span>Add to Compare</span></a>
+              <input id="SampleItemID_1" type="checkbox" class="filled-in" onclick="SwitchValueInCookie(this); ComparisonSummary();">
+              <label for="SampleItemID_1">Compare</label>
             </div>
       </section><!--/ intro -->
 
@@ -323,8 +324,9 @@
                 <p class="excerpt hide-on-small-only">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </div> 
               <div class="hide-on-small-only compare">
-                <a onclick="displayCustomHTMLToast()"><i class="material-icons">compare</i></a>
-              </div>     
+                <input id="SampleItemID_2" type="checkbox" class="filled-in" onclick="SwitchValueInCookie(this); ComparisonSummary();">
+                <label for="SampleItemID_2">Compare</label>
+              </div>      
             </li>
 
             <li class="row">
@@ -344,8 +346,9 @@
                 <p class="excerpt hide-on-small-only">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </div>    
               <div class="hide-on-small-only compare">
-                <a onclick="displayCustomHTMLToast()"><i class="material-icons">compare</i></a>
-              </div>     
+                <input id="SampleItemID_3" type="checkbox" class="filled-in" onclick="SwitchValueInCookie(this); ComparisonSummary();">
+                <label for="SampleItemID_3">Compare</label>
+              </div>       
             </li>
 
             <li class="row">
@@ -365,8 +368,9 @@
                 <p class="excerpt hide-on-small-only">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </div>
               <div class="hide-on-small-only compare">
-                <a onclick="displayCustomHTMLToast()"><i class="material-icons">compare</i></a>
-              </div>     
+                <input id="SampleItemID_4" type="checkbox" class="filled-in" onclick="SwitchValueInCookie(this); ComparisonSummary();">
+                <label for="SampleItemID_4">Compare</label>
+              </div>      
             </li>
 
           </ul>
@@ -403,7 +407,7 @@
   </main>
 
   <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-    <a class="btn-floating btn-large green" id="top">
+    <a class="btn-floating btn-large" id="top">
       <i class="material-icons">keyboard_arrow_up</i>
     </a>
   </div>
@@ -547,6 +551,8 @@
   <script src="js/materialize.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/init.js"></script>
+  <script src="js/compare.js"></script>
+
   
   <script type="text/javascript">      
       $('.owl-carousel').owlCarousel({
