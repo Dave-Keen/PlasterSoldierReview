@@ -2,47 +2,54 @@
 
 .modal {
 
-		label {
-			font-size: $p-normal;
-			color: $off-black;
+	label {
+		font-size: $p-normal;
+		color: $off-black;
+	}
+
+	.search-field {
+
+		.material-icons {
+			padding-top: 9px;
 		}
 
-		.search-field {
+	}
 
-			.material-icons {
-				padding-top: 9px;
-			}
+	.input-field input {
+		padding-left: 5px;
+		margin: 0;
+	}
 
+	.input-field input[type=text]:focus {
+		background: $input-bg-color;
+	}
+
+
+	.input-field input[type=search] {
+		width: 100%;
+		padding-left: 5px;
+	}
+
+	.input-field input[type=search]+label {
+		position: relative;
+    	left: 93%;
+    	top: -47px;
+	}
+
+	.advanced-search-trigger {
+		display: block;
+		margin: 20px 0;
+
+		a {
+			text-decoration: underline;
+			cursor: pointer;
 		}
 
-		.input-field input {
-			padding-left: 5px;
-			margin: 0;
+		i {
+			vertical-align: bottom;
+			color: $link-color;
 		}
-
-		.input-field input[type=text]:focus {
-			background: $input-bg-color;
-		}
-
-
-		.input-field input[type=search] {
-			width: 100%;
-			padding-left: 5px;
-		}
-
-		.advanced-search-trigger {
-			display: block;
-			margin: 20px 0;
-
-			a {
-				text-decoration: underline;
-			}
-
-			i {
-				vertical-align: bottom;
-				color: $link-color;
-			}
-		}
+	}
 
 }
 

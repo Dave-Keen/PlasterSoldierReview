@@ -1,4 +1,15 @@
+@media #{$small-and-down} {
+
+ 	.compare {
+
+		.compare-grid {
+			overflow: scroll;
+		}
+ 	}
+}
+
 .compare {
+
 
 	table {
 
@@ -21,13 +32,22 @@
 
 		.remove {
 			font-size: $p-x-small;
+			cursor: pointer;
+			background: $border-color;
+			border-radius: 10px;
+			padding: 2px 6px;
+
 
 			i {
 				font-size: $p-small;
+				position: relative;
+				top: 3px;
 			}
 		}
 
-
+		td.compare {
+			vertical-align: top;
+		}
 
 	}
 	
