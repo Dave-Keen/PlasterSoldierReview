@@ -41,12 +41,50 @@ figure {
 }
 
 // ratings
+
 .ratings {
+
+	.collection .collection-item {
+		position: relative;
+	}
 
 	.progress {
 		width: 50%;
+		margin-right: 38px;
 	}
 
+	.value {
+		position: absolute;
+		right: 10px;
+	    top: 20px;
+	    background: $primary-color;
+	    color: $white;
+	    padding: 3px 8px;
+	    line-height: normal;
+	    @include border-radius(100%);
+	    font-weight: $weight-medium;
+	}
+}
+
+@media #{$small-and-down} {
+
+	.ratings {
+
+		.collection .collection-item {
+			position: relative;
+		}
+
+		.progress {
+			width: 88%;
+			margin-right: 40px;
+			float: left;
+		}
+
+		.value {
+			right: 10px;
+		    top: 64px;
+		}
+	}
 }
 
 // Tool tips
@@ -153,4 +191,12 @@ dl.small-list {
 .collection .collection-item.avatar .circle {
 	@include sprite-sheet(0 -310px);
 }
+
+// Modals
+
+	.modal-close-large {
+		position: fixed;
+		top: 0;
+		right: -13px;
+	}
 

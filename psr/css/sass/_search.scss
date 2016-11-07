@@ -2,6 +2,14 @@
 
 .modal {
 
+	&.search {
+
+		.modal-content {
+			padding-top: 0;
+		}
+
+	}
+
 	label {
 		font-size: $p-normal;
 		color: $off-black;
@@ -75,11 +83,11 @@
 
 @media #{$large-and-up} {
 
-	.modal.modal-fixed-footer {
+	.modal.modal-fixed-footer.search {
 		// reuse slider animation
 	}
 
-	.modal.modal-fixed-footer .modal-content {
+	.modal.modal-fixed-footer.search .modal-content {
 		height: calc(100%);
 	}
 
@@ -93,12 +101,6 @@
 
 		 form {
 		 	margin-top: 114px;
-		 }
-
-		 .modal-close-large {
-		 	position: fixed;
-		 	top: 0;
-		 	right: -13px;
 		 }
 
 		 .input-field input {
