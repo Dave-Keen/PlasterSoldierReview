@@ -79,14 +79,21 @@
 
       <section id="media" class="article-media boxed-content scrollspy"><!-- article media -->
 
-        <div class="owl-carousel">
+        <div class="owl-carousel carousel-display">
           <div><img src="images/demo/slide-1.jpg" class="responsive-img"></div>
           <div><img src="images/demo/slide-2.jpg" class="responsive-img"></div>
           <div><img src="images/demo/slide-3.jpg" class="responsive-img"></div>
         </div>
 
-        <div class="center hide-on-med-and-down">
-            <a class="waves-effect waves-teal btn-flat image-reveal-toggle view-more-btn-content">View More</a>
+        <div class="list-display center-align hide">
+          <div class="col s12"><img src="images/demo/slide-1.jpg" class="responsive-img"></div>
+          <div class="col s12"><img src="images/demo/slide-2.jpg" class="responsive-img"></div>
+          <div class="col s12"><img src="images/demo/slide-3.jpg" class="responsive-img"></div>
+        </div>
+
+        <div class="col s12 media-controls">
+            <a class="btn-list-view">List View <i class="material-icons">view_list</i></a>
+            <a class="btn-carousel-view">Carousel View <i class="material-icons">view_carousel</i></a>
         </div>
 
         <!-- notes to dev: need to add image zoom -->
@@ -877,23 +884,25 @@
       $('.owl-carousel').owlCarousel({
         loop:true,
         margin:10,
+        navText:["<i class='material-icons'>chevron_left</i>","<i class='material-icons'>chevron_right</i>"],
         responsive:{
             0:{
                 items:1,
-                nav: true,
+                nav: false,
                 dots: true,
                 margin:10
             },
 
             740:{
                 items:1,
+                nav: false,
                 stagePadding:100,
                 margin:0      
             },
 
             993:{
                 items:1,
-                nav: false,
+                nav: true,
                 dots: false,
                 stagepadding:0,
                 margin:10

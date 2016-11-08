@@ -1,6 +1,23 @@
 
 .article-page {
 
+	.btn-list-view, .btn-carousel-view {
+
+		cursor: pointer;
+
+		.material-icons {
+			line-height: initial;
+			position: relative;
+    		top: 7px;
+		}
+
+	}
+
+
+	.btn-list-view {
+		margin-right: 30px;
+	}
+
 	.intro {
 
 		.compare {
@@ -101,6 +118,10 @@
 
 	.article-page {
 
+		.media-controls {
+			text-align: center;		
+		}
+
 		h1 {
 			margin-bottom: 0;
 		}
@@ -122,6 +143,10 @@
     
   	.article-page {
 
+		.media-controls {
+			text-align: center;		
+		}
+
   		.article-wrapper {
   			padding: 0;
   		}
@@ -137,6 +162,10 @@
   @media #{$large-and-up} {
     
   	.article-page {
+
+		.media-controls {
+			text-align: right;		
+		}
 
   		.breadcrumb {
 

@@ -7,12 +7,42 @@
 }
 
 .owl-prev {
-	display: none !important;
+	position: absolute;
+    bottom: 50px;
+    left: 10px;
+	background: $slider-bg-color;
+	@include border-radius(100%);
+	padding: 2px 7px;
+	line-height: normal;
 }
 
 .owl-next {
 	@extend .owl-prev;
+	left: 60px;
 }
+
+.owl-prev .material-icons, .owl-next .material-icons {
+	padding-top: 5px;
+	color: $white;
+}
+
+
+@media #{$large-and-up} {
+
+	.owl-prev {
+		left: -18px;
+		top: 43%;
+		bottom: initial;
+	}
+
+	.owl-next {
+		left: 680px;
+		top: 43%;
+	}
+
+}
+
+
 
 .owl-dots .owl-dot {
 	display: inline-block;
