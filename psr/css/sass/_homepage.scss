@@ -207,7 +207,7 @@
 .homepage {
 
 	.hero.banner {
-		min-height: 200px;
+		min-height: 220px;
 		background-size: cover !important;
 		position: relative;
 
@@ -219,10 +219,13 @@
 			width: 100%;
 
 			h1 {
-				font-size: $h1-fontsize;
-				font-weight: $weight-bold;
 				color: $white;
-				margin-top: 10px;
+				font-size: 2.5rem;
+    			margin-top: 20px;
+    			line-height: 1;
+    			word-spacing: 260px;
+    			margin-top: 20px;
+    			text-transform: uppercase;
 			}
 
 			h1:after {
@@ -270,7 +273,10 @@
 			.header {
 
 				h1 {
-					font-size: $h1-large;
+					font-size: 4rem;
+					word-spacing: 20px;
+    				margin-top: 70px;
+    				text-align: center;
 				}
 			}
 
@@ -302,7 +308,13 @@
 
 				h1 {
 					margin-top: 0;
+					font-weight: 500;
+					text-align: left;
 				}
+			}
+
+			.last-updated {
+				margin-top: 10px;
 			}
 
 			.meta {
