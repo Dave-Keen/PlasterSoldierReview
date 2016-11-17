@@ -31,10 +31,10 @@
   border-bottom: 1px solid $collapsible-border-color;
   box-sizing: border-box;
 
-  p {
-    margin: 0;
+  .content {
     padding: 2rem;
   }
+  
 }
 
 // sideNav collapsible styling

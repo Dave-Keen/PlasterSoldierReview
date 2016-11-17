@@ -258,6 +258,7 @@
 		.meta {
 			width: 100%;
 			text-align: left;
+			margin-bottom: 15px;
 		}
 
 	}
@@ -273,7 +274,7 @@
 			.header {
 
 				h1 {
-					font-size: 4rem;
+					font-size: 3.6rem;
 					word-spacing: 20px;
     				margin-top: 70px;
     				text-align: center;
@@ -302,7 +303,7 @@
 	.homepage {
 
 		.hero.banner {
-			min-height: 400px;
+			padding-bottom: 30%; 
 
 			.header {
 

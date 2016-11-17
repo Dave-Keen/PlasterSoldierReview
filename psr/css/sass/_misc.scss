@@ -50,19 +50,20 @@ figure {
 
 	.progress {
 		width: 50%;
-		margin-right: 38px;
+		margin-right: 45px;
 	}
 
 	.value {
 		position: absolute;
 		right: 10px;
-	    top: 20px;
+	    top: 23px;
 	    background: $primary-color;
 	    color: $white;
-	    padding: 3px 8px;
+	    padding: 3px 7px;
 	    line-height: normal;
-	    @include border-radius(100%);
+	    @include border-radius(10px);
 	    font-weight: $weight-medium;
+	    font-size: $p-x-small;
 	}
 }
 

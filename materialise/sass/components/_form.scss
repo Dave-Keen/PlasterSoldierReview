@@ -62,7 +62,7 @@ textarea.materialize-textarea {
   box-shadow: none;
   box-sizing: content-box;
   transition: all .3s;
-
+  -webkit-appearance: none;
 
   // Disabled input style
   &:disabled, &[readonly="readonly"] {
